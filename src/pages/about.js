@@ -8,8 +8,8 @@ import "./index.css"
 
 import { Container, Row, Col } from "react-bootstrap"
 
-import CV from "/" //Import you CV file here!
-import other from "/" //Import other downloadable here
+import Resume from "../resources/Saheed Akinbile Resume.pdf" //Import you Resume file here!
+import Transcript from "../resources/SSR_TSRPT-3.pdf" //Import other downloadable here
 
 export default () => (
   <div className="App">
@@ -24,8 +24,8 @@ export default () => (
       <hr />
       <Container fluid>
         <Row style={{ marginTop: "2rem", marginBottom: "1.5rem" }}>
-          <MyButton text={"CV download"} URL={CV} />
-          <MyButton text={"Other Downloadable"} URL={other} />
+          <MyButton text={"Resume download"} URL={Resume} />
+          <MyButton text={"Unofficial Transcript"} URL={Transcript} />
         </Row>
         <Row>
           <Col>

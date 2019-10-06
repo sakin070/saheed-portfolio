@@ -6,9 +6,9 @@ import ProjectCard from "../components/portProjectCard/ProjectCard"
 
 import "./index.css"
 
-import project1Picture from "../images/portfolio/cabin.png"
-import project2Picture from "../images/portfolio/cake.png"
-import project3Picture from "../images/portfolio/game.png"
+import project1Picture from "../resources/images/portfolio/cabin.png"
+import project2Picture from "../resources/images/portfolio/cake.png"
+import project3Picture from "../resources/images/portfolio/game.png"
 
 /*######### PROJECT OBJECTS TEMPLATE################
 import projectPicture from ""
@@ -22,6 +22,7 @@ const projectProject = {
 #####################################################
 */
 
+//will do
 //TODO: Make this into an array with objects and map through them instead down below.
 
 //Project 1

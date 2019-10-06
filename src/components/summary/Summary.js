@@ -8,30 +8,6 @@ import "./summary.css"
 
 const Summary = () => (
   <Container className="content" fluid>
-    <h3>Cool Recent Tech I use:</h3>
-    <br />
-    <Row className="text-center tech_icons">
-      <Col>
-        <i className="fab fa-js hover_effect" />
-        <br />
-        <span>JavaScript</span>
-      </Col>
-      <Col>
-        <i className="fab fa-react hover_effect" />
-        <br />
-        <span>React.js</span>
-      </Col>
-      <Col>
-        <i className="fab fa-html5 hover_effect" />
-        <br />
-        <span>HTML5</span>
-      </Col>
-      <Col>
-        <i className="fab fa-css3 hover_effect" />
-        <br />
-        <span>CSS3</span>
-      </Col>
-    </Row>
     <br />
 
     <h4 className="goal_text text-center">

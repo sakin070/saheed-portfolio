@@ -1,11 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
 import { Container } from "react-bootstrap"
 import "./projects.css"
 
 import ProjectCard from "../portProjectCard/ProjectCard"
 
-import image from "../../images/portfolio/cabin.png"
+import image from "../../resources/images/portfolio/talentboard.9e162275.gif"
 
 const Projects = () => (
   <React.Fragment>
@@ -20,17 +19,17 @@ const Projects = () => (
       //hostedURL: URL to the hosted version of the app*/}
       <ProjectCard
         imageSrcPath={image}
-        title={"Cool React app"}
+        title={"Talentboard"}
         date={"2019-03-28"}
         description={
-          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. At impedit, provident esse adipisci ipsam accusamus. Vitae quae maiores quas beatae, quis cumque culpa itaque eveniet, vero nesciunt aspernatur odit optio."
+          "Talentboard is an applicant tracking tool for HR and hiring managers. Talentboard's simple drag & drop interface introduces a unique, visual approach to managing applicants through the hiring process."
         }
         sourceURL={"https://github.com/"}
         hostedURL={"http://www.google.com"}
       />
-      <Link to="/projects" className="blueViolet">
-        Go to Projects page ---->
-      </Link>
+      {/*<Link to="/projects" className="blueViolet">*/}
+      {/*  Go to Projects page ---->*/}
+      {/*</Link>*/}
     </Container>
   </React.Fragment>
 )
