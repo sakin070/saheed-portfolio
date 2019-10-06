@@ -17,7 +17,7 @@ const Hero = () => (
       <p>
         Let's chat{" "}
         <a href="mailto:sakin070@uottawa.ca">
-          <span style={{ color: "blueviolet" }}>john.doe@gmail.com</span>
+          <span style={{ color: "#5fb8ff" }}>sakin070@uottawa.ca</span>
         </a>
       </p>
     </div>

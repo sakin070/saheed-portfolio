@@ -11,15 +11,13 @@ const Footer = () => (
     <Container style={{ maxWidth: "960px" }}>
       <Row>
         <Col>
-          <h3>John Doe</h3>
-          <p style={{ color: "blueviolet", fontSize: "1.3rem" }}>
-            {/*TODO: ADD A MAILTO-LINK */}
-            john.doe@gmail.com
-          </p>
+          <h3>Saheed Akinbile</h3>
+          <a href="mailto:sakin070@uottawa.ca">
+            <span style={{ color: "#5fb8ff" }}>sakin070@uottawa.ca</span>
+          </a>
           <br />
           <p style={{ fontSize: "1.3rem" }}>
-            I'm a great developer that loves to code. I can help you grow your
-            next product.
+            I'm a great developer that loves to code.
           </p>
         </Col>
       </Row>
@@ -112,7 +110,7 @@ const Footer = () => (
       </Row>
       <Row className="text-center" style={{ marginTop: "3rem" }}>
         <Col>
-          John Doe © {new Date().getFullYear()}, Built with
+          Saheed Akinbile © {new Date().getFullYear()}, Built with
           <i
             className="fas fa-mug-hot"
             style={{
@@ -123,7 +121,7 @@ const Footer = () => (
           />
           <a href="https://www.gatsbyjs.org">
             {" "}
-            <span className="blueViolet">& Gatsby</span>
+            <span className="#5fb8ff">& Gatsby</span>
           </a>
         </Col>
       </Row>

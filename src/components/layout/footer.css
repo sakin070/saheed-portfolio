@@ -1,6 +1,6 @@
 a {
   text-decoration: none;
-  color: "#fff";
+  color: #fff;
 }
 
 .footer_social {
@@ -22,7 +22,7 @@ a:link {
 }
 
 .hover_effect:hover {
-  color: blueviolet;
+  color: #5fb8ff;
 }
 
 .link_styles {
@@ -30,11 +30,11 @@ a:link {
 }
 
 .link_styles:hover {
-  color: blueviolet;
+  color: #5fb8ff;
 }
 
 .blueViolet {
-  color: blueviolet;
+  color: #5fb8ff;
 }
 
 .blueViolet:hover {
