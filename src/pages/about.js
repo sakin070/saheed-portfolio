@@ -86,7 +86,7 @@ export default () => (
         </Row>
         <Row>
           <Col>Morgan Stanley, ​Montreal, Canada</Col>
-          <Col>2018.01 - 2015.04</Col>
+          <Col>2018.01 - 2018.04</Col>
         </Row>
         <Row>
           <Col>
