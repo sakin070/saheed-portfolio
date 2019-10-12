@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-clean-portfolio",
+  "name": "saheed-portfolio",
   "private": true,
   "description": "A clean portfolio built with gatsby.js",
   "version": "0.1.0",
@@ -34,9 +34,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ugglr/gatsby-clean-portfolio"
+    "url": "https://github.com/sakin070/saheed-portfolio/"
   },
   "bugs": {
-    "url": "https://github.com/ugglr/gatsby-clean-portfolio/issues"
+    "url": "https://github.com/sakin070/saheed-portfolio/"
   }
 }
