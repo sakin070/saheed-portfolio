@@ -21,6 +21,12 @@ const MyJumbo = props => (
       <span>
         <p>{props.body2}</p>
       </span>
+      <span>
+        <p>{props.body3}</p>
+      </span>
+      <span>
+        <p>{props.body4}</p>
+      </span>
       <SocialRow />
     </div>
   </Jumbotron>

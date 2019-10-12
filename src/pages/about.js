@@ -16,10 +16,13 @@ export default () => (
     <Layout>
       <MyJumbo
         body={
-          "So you are looking for a professional, communicative & punctual software engineer who likes to keep productive."
+          "I'm a student at the University of Ottawa in the Software Engineering with an option in Technology Management and Entrepreneurship program"
         }
-        body2={"I can also do this cool thing if that's... needed."}
-        title={"tldr; About me."}
+        body3={
+          "I was initially enrolled in the double major program of Mechanical Engineering and Computing Technology, but as I progressed with my classes I found myself wanting to learn more about programming and technology so I made the switch to Software Engineering."
+        }
+        body2={ "I was born and raised in Lagos Nigeria 🇳🇬 where I lived with my wonderful family. At age 18, I moved to Canada with the excitement of living in a new country and starting university."}
+        title={"About me."}
       />
       <hr />
       <Container fluid>
@@ -27,33 +30,28 @@ export default () => (
           <MyButton text={"Resume download"} URL={Resume} />
           <MyButton text={"Unofficial Transcript"} URL={Transcript} />
         </Row>
-        <Row>
-          <Col>
-            <h3>Summary</h3>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <h5>I love Coffee. I mean, more than people normaly like coffee</h5>
-            <br />
-            <p>
-              I'm a Software Engineer building noice Websites on the internet.
-              <br />
-              <br />
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
-              pariatur nobis ipsa laborum quae, fuga vel a, dolor consectetur
-              blanditiis explicabo dolorem quos sunt voluptatibus dicta commodi
-              temporibus magnam placeat.
-              <br />
-              <br />
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
-              consequuntur. Numquam quaerat hic eum, earum perferendis totam!
-              Fugiat, explicabo placeat labore voluptatum voluptas numquam
-              repudiandae delectus animi dolorem consequatur. Reiciendis?
-            </p>
-          </Col>
-        </Row>
         <hr />
+
+        {/* This is the beginning of the education section*/}
+        <Row>
+          <Col>
+            <h3>Education</h3>
+          </Col>
+        </Row>
+        {/* Bachelors Degree */}
+        <Row>
+          <Col>
+            <h5>Bachelors of Applied Science. Software Engineering
+              (Engineering Management and Entrepreneurship) (Co-op)</h5>
+          </Col>
+        </Row>
+        <Row>
+          <Col>University of Ottawa, Ontario, Canada</Col>
+          <Col>2016.08 - 2020.12</Col>
+        </Row>
+        <br/>
+
+
         {/* This is the beginning of the career section*/}
         <Row>
           <Col>
@@ -63,72 +61,42 @@ export default () => (
         {/* Position number 1*/}
         <Row>
           <Col>
-            <h5>Software Engineer</h5>
+            <h5>Quality Assurance Intern</h5>
           </Col>
         </Row>
         <Row>
-          <Col>ACME Studios, Roadrunner City, US</Col>
-          <Col>2015.09 - 2019.01</Col>
+          <Col>Kinaxis, ​Ottawa, Canada</Col>
+          <Col>2019.05 - 2019.08</Col>
         </Row>
         <Row>
           <Col>
             <p style={{ marginTop: "1rem" }}>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et iure
-              nisi consequuntur provident officia odio vitae, nam neque natus
-              debitis earum facere, quibusdam similique itaque sed, cumque
-              aliquam voluptas quos.
+              Reduced the average time of generating RapidResponse business cases tests by 90% by developing InTeGeR, a tool that records RapidResponse user interaction and generates the equivalent test, written in Java​. ​
+              This tool is now available to al Kinaxis employees to generate tests.
             </p>
           </Col>
         </Row>
         <hr />
         {/* SW intern Position*/}
+
         <Row>
           <Col>
-            <h5>Software Engineer Intern</h5>
+            <h5>S​oftware Analyst</h5>
           </Col>
         </Row>
         <Row>
-          <Col>Mip Mip Co LTD, Roadrunner City, US&A</Col>
-          <Col>2014.06 - 2014.09</Col>
+          <Col>Morgan Stanley, ​Montreal, Canada</Col>
+          <Col>2018.01 - 2015.04</Col>
         </Row>
         <Row>
           <Col>
             <p style={{ marginTop: "1rem" }}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-              ullam eius nihil porro itaque nobis facere. Impedit eos minima
-              porro. Culpa, laboriosam! Qui quo provident aperiam et ullam odio
-              ex.
+              Designed and implemented a core functionality of a secured file sharing system that is available to all external facing customer
             </p>
           </Col>
         </Row>
         <hr />
-        {/* This is the beginning of the education section*/}
-        <Row>
-          <Col>
-            <h3>Education</h3>
-          </Col>
-        </Row>
-        {/* Masters Degreee*/}
-        <Row>
-          <Col>
-            <h5>MSc. ACME studies</h5>
-          </Col>
-        </Row>
-        <Row>
-          <Col>ACME University, ACME City, US</Col>
-          <Col>2009.08 - 2015.08</Col>
-        </Row>
-        <Row>
-          <Col>
-            <p style={{ marginTop: "1rem" }}>
-              <strong>Specialization:</strong>
-              <br /> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Tenetur quasi fugit accusamus officia sequi optio nulla,
-              cupiditate in vitae natus odit nihil commodi corrupti mollitia
-              necessitatibus iure eius praesentium? Fugit!
-            </p>
-          </Col>
-        </Row>
+
       </Container>
     </Layout>
   </div>
