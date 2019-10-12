@@ -6,9 +6,10 @@ import ProjectCard from "../components/portProjectCard/ProjectCard"
 
 import "./index.css"
 
-import project1Picture from "../resources/images/portfolio/cabin.png"
+import project1Picture from "../resources/images/portfolio/talentboard.9e162275.gif"
 import project2Picture from "../resources/images/portfolio/cake.png"
 import project3Picture from "../resources/images/portfolio/game.png"
+import image from "../resources/images/portfolio/talentboard.9e162275.gif"
 
 /*######### PROJECT OBJECTS TEMPLATE################
 import projectPicture from ""
@@ -27,11 +28,12 @@ const projectProject = {
 
 //Project 1
 
+
 const project1 = {
-  title: "Cool React app",
+  title: "Talentboard",
   date: "2019-03-28",
   decription:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quaerat enim amet voluptatum, aut quisquam a, veritatis dolores odit adipisci corrupti tenetur optio. Aliquam incidunt dolor laborum tempore officia obcaecati.",
+    "Talentboard is an applicant tracking tool for HR and hiring managers. Talentboard's simple drag & drop interface introduces a unique, visual approach to managing applicants through the hiring process.",
   sourceURL: "https://github.com",
   hostedURL: "http://www.google.com",
 }
@@ -39,10 +41,10 @@ const project1 = {
 //Project 2
 
 const project2 = {
-  title: "Project 2 title",
+  title: "Tic Tac Lose",
   date: "2019-03-03",
   decription:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quaerat enim amet voluptatum, aut quisquam a, veritatis dolores odit adipisci corrupti tenetur optio. Aliquam incidunt dolor laborum tempore officia obcaecati.",
+    "A tic tac toe game with the difficulty setup so you can not win. If you think you can win feel free to give it a go",
   sourceURL: "https://github.com/",
   hostedURL: "https://www.google.com",
 }
