@@ -15,6 +15,10 @@ const MyJumbo = props => (
   <Jumbotron fluid className="myjumbo" style={myjumbo_styles}>
     <div className="myjumbo_content">
       <h1>{props.title}</h1>
+      {/*<span>*/}
+      {/*  <p>*/}
+      {/*    <img src={props.img} style={{borderRadius: "20%", height: "400px", width: "350px"}}/> </p>*/}
+      {/*</span>*/}
       <span>
         <p>{props.body}</p>
       </span>

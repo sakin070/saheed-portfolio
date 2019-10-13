@@ -5,6 +5,7 @@ import MyButton from "../components/myButton/MyButton"
 
 import "../fontawesome/css/all.min.css"
 import "./index.css"
+import image from "../resources/images/portfolio/DSC_0078.png"
 
 import { Container, Row, Col } from "react-bootstrap"
 
@@ -14,6 +15,7 @@ import Transcript from "../resources/SSR_TSRPT-3.pdf" //Import other downloadabl
 export default () => (
   <div className="App">
     <Layout>
+
       <MyJumbo
         body={
           "I'm a student at the University of Ottawa in the Software Engineering with an option in Technology Management and Entrepreneurship program"
