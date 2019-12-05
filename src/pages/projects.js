@@ -26,7 +26,7 @@ const projects = [
     decription:
       "Talentboard is an applicant tracking tool for HR and hiring managers. Talentboard's simple drag & drop interface introduces a unique, visual approach to managing applicants through the hiring process.",
     image: image2,
-    sourceURL: "https://www.saheedakinbile.com/404",
+    sourceURL: "https://github.com/TalentBoard",
     hostedURL:"https://talentboard-app.herokuapp.com/login"
   },
   {
