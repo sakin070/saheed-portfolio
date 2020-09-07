@@ -26,24 +26,6 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <SEO
-          title="Saheed Akinbile Software Engineer"
-          keywords={[
-            `gatsby`,
-            `application`,
-            `react`,
-            `software developer`,
-            `portfolio Site`,
-            `material-UI`,
-            `react-bootstrap`,
-            `boostrap`,
-            `API calling`,
-            `Axios`,
-            `Fetch`,
-            `Javascript`,
-            `Frontend Developer`,
-          ]}
-        />
         <MyNavbar />
         <div
           style={{

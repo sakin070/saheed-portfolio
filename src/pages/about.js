@@ -10,7 +10,7 @@ import image from "../resources/images/portfolio/DSC_0078.png"
 import { Container, Row, Col } from "react-bootstrap"
 
 import Resume from "../resources/Saheed Akinbile Resume.pdf" //Import you Resume file here!
-import Transcript from "../resources/SSR_TSRPT-3.pdf" //Import other downloadable here
+import Transcript from "../resources/SSR_TSRPT.pdf" //Import other downloadable here
 
 export default () => (
   <div className="App">
@@ -18,7 +18,7 @@ export default () => (
 
       <MyJumbo
         body={
-          "I'm a student at the University of Ottawa in the Software Engineering with an option in Technology Management and Entrepreneurship program"
+          "I'm a graduate of the University of Ottawa in the Software Engineering with an option in Technology Management and Entrepreneurship program"
         }
         body3={
           "I was initially enrolled in the double major program of Mechanical Engineering and Computing Technology, but as I progressed with my classes I found myself wanting to learn more about programming and technology so I made the switch to Software Engineering."
