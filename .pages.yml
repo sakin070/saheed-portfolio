@@ -1,0 +1,41 @@
+media:
+  input: public/images/posts
+  output: /images/posts
+content:
+  - name: posts
+    label: Blog posts
+    type: collection
+    path: site/content/posts
+    format: yaml-frontmatter
+    filename: "{primary}.md"
+    view:
+      primary: title
+      fields: [title, date, category, draft]
+      sort: date
+      order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: description
+        label: Short description
+        type: text
+        required: true
+      - name: date
+        label: Post date
+        type: date
+        required: true
+      - name: category
+        label: Topic
+        type: string
+        default: Notes
+      - name: draft
+        label: Keep as draft
+        type: boolean
+        default: true
+        description: "Drafts stay off the public website. Turn this off when the post is ready to publish."
+      - name: body
+        label: Your post
+        type: rich-text
+        required: true

@@ -56,7 +56,6 @@ typings/
 
 # gatsby files
 .cache/
-public
 
 # Mac files
 .DS_Store
@@ -71,3 +70,10 @@ yarn-error.log
 src/fontawesome/svgs/
 
 \.env\.development
+
+# Astro and browser verification
+.astro/
+dist/
+test-results/
+playwright-report/
+.netlify/

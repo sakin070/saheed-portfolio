@@ -1,0 +1,10 @@
+---
+import Arrow from './Arrow.astro';
+import PostList from './PostList.astro';
+import { publishedPosts } from '../lib/posts';
+const posts = (await publishedPosts()).slice(0, 3);
+---
+<section id="writing" class="section container writing-section" aria-labelledby="writing-title">
+  <div class="section-heading"><div><p class="eyebrow section-label"><span>04 /</span> NOTES ALONG THE WAY</p><h2 id="writing-title">Thinking <em>out loud.</em></h2></div><div class="writing-heading-right"><p>Things I’m building, learning, and figuring out.</p><a class="text-link" href="/writing/">All writing <Arrow /></a></div></div>
+  <PostList posts={posts} />
+</section>
