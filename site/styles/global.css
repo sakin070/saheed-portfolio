@@ -84,8 +84,7 @@
   .pill { display: inline-flex; align-items: center; gap: 7px; padding: 5px 10px; background: #3a383c; border: 1px solid #5b565e; border-radius: 30px; color: #f8f7f8; font-size: 9px; }
   .pill .status-dot { width: 5px; height: 5px; background: #b5cdbd; }
   .work-role { font-size: 10px; color: #d1cdd2; }
-  .featured-copy h3 { display: flex; align-items: center; gap: 18px; font-size: 62px; margin-top: 30px; letter-spacing: -.055em; }
-  .featured-copy h3 > span { font-size: 37px; color: #a7bdaa; font-weight: 400; }
+  .featured-copy h3 { font-size: 62px; margin-top: 30px; letter-spacing: -.055em; }
   .featured-intro { font-size: 22px; line-height: 1.5; margin-top: 20px; max-width: 450px; letter-spacing: -.025em; }
   .featured-description { color: #ccc7ce; font-size: 13px; line-height: 1.85; max-width: 390px; margin-top: 14px; }
   .light-link { color: #fff; border-color: #777178; margin-top: 25px; font-size: 12px; }
