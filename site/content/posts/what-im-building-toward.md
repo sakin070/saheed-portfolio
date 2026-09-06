@@ -14,7 +14,7 @@ I grew up in Lagos and moved to Canada at 18, planning to become a mechanical en
 
 My interest in physical systems stayed with me. It’s what draws me to deep tech and hard tech, especially where hardware and software meet.
 
-At Ford, I was part of the camera team and later worked on drive modes. My work also touched parking and vehicle maintenance. I worked on software that translated driver requests into changes in steering feel, suspension stiffness, and acceleration, and used sensor data to calculate safety boundaries with a trailer attached.
+At Ford, I was part of the camera team and later worked on drive modes. My software work included adjusting steering feel, suspension stiffness, and acceleration to driver requests; using cameras and sensors to park automatically in a spot the driver chose; and calculating trailer safety boundaries.
 
 Those are the kinds of problems that pull me in: code, sensors, and physical systems working together.
 
