@@ -16,6 +16,8 @@ The homepage flows through an introduction, current work, other businesses, back
 - Mentoring: retain only a brief mention in the biography. The user rejected the dedicated mentoring panel; remove its section, navigation item, and service-style invitation.
 - The tone reflects his public writing about curiosity, conversations, and learning. New first-person copy is review copy, not a claim to verbatim quotations.
 
+The user clarified that Managing Director often carries the chief executive role in Nigeria. Make his company leadership explicit for the SF audience: he led ESS Nigeria Limited as Managing Director and launched Lucky Star, its lottery product. Retain the documented title; the copy should convey more than involvement in a product launch.
+
 ## Architecture
 
 Astro static output, Node 24, local font assets, no client framework, database, analytics, or external embeds. Source lives in `site/`, public assets in `public/`; legacy Gatsby source and private legacy documents stay outside build input. Shared layout owns metadata; components own sections. A small script controls the mobile menu, with usable navigation when JavaScript is disabled.
