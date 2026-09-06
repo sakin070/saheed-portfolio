@@ -1,6 +1,6 @@
 # Saheed Akinbile — personal website
 
-A personal site for a founder and engineer in San Francisco, connecting Minicor, entrepreneurship, agriculture, mentorship, and Nigerian roots. The design is personal and approachable, with real photographs, a blue and white palette, and locally hosted DM Sans and Bricolage Grotesque. Built with Astro, local fonts, and a small amount of browser JavaScript. Netlify serves static HTML.
+A personal site for a founder and engineer in San Francisco, connecting Minicor, entrepreneurship, agriculture, and Nigerian roots. The design uses charcoal and white with restrained burgundy accents, a typographic introduction, the `saheed.` wordmark and `s.` icon, and locally hosted DM Sans and Bricolage Grotesque. Mentoring is a brief biographical detail; there is no separate mentoring offering. Built with Astro, local fonts, and a small amount of browser JavaScript. Netlify serves static HTML.
 
 ## Run locally
 
@@ -56,10 +56,10 @@ The included **What I’m building toward** essay is new copy drafted from Sahee
 - `site/content/posts/`: blog posts.
 - `site/styles/global.css`: responsive layout and visual system.
 - `site/layouts/Layout.astro`: page metadata and structured data.
-- `public/images/`: real portrait and co-founder photo, generated social card, and blog media.
+- `public/images/`: typographic social card and blog media. Personal photographs are not included.
 - `scripts/create-social.mjs`: regenerate the social card using Playwright and local fonts.
 
-The portrait comes from Saheed’s public GitHub profile. The candid co-founder photo comes from Faiz’s public Minicor launch post. Biographical copy uses Saheed’s current site, Minicor’s YC profile, his public posts about networking and getting into YC, a technical guest talk, and details he supplied directly. Source links and photo provenance are recorded in the design spec. The opening essay and other first-person copy are new review copy. There are no invented testimonials, mentoring counts, contact emails, or personal hobbies.
+Biographical copy uses Saheed’s current site, Minicor’s YC profile, his public posts about networking and getting into YC, and details he supplied directly. Source links are recorded in the design spec. The site and link preview use no personal photos. The opening essay and other first-person copy are new review copy. There are no invented testimonials, mentoring counts, contact emails, or personal hobbies.
 
 The legacy Gatsby source in `src/`, `static/`, and `gatsby-config.js` is retained for reference. Astro reads only `site/` and `public/`. Old résumés, transcripts, and bundled Font Awesome files are not copied into the new deployment.
 
@@ -89,4 +89,4 @@ npm test
 
 Local browser tests use installed Google Chrome. To use bundled Chromium, run `npx playwright install chromium` and `PLAYWRIGHT_CHANNEL=chromium npm test`. In CI the default is bundled Chromium.
 
-Checks cover visitor navigation, mobile keyboard behavior, progressive enhancement without JavaScript, viewport overflow, image loading, blog reading, RSS, canonical URLs, and automated WCAG AA accessibility. Automated accessibility checks supplement visual and keyboard review; they are not an accessibility certification.
+Checks cover visitor navigation, mobile keyboard behavior, progressive enhancement without JavaScript, viewport overflow, blog reading, RSS, canonical URLs, and automated WCAG AA accessibility. Automated accessibility checks supplement visual and keyboard review; they are not an accessibility certification.

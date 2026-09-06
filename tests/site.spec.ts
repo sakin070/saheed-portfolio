@@ -27,37 +27,31 @@ test('mobile menu supports keyboard dismissal and section navigation', async ({ 
   await expect(menu).toHaveAttribute('aria-expanded', 'false');
 });
 
-test('mentorship and writing remain reachable without JavaScript', async ({ browser }) => {
+test('contact and writing remain reachable without JavaScript', async ({ browser }) => {
   const context = await browser.newContext({ javaScriptEnabled: false });
   const page = await context.newPage();
   await page.setViewportSize({ width: 360, height: 800 });
   await page.goto('/');
   const nav = page.getByRole('navigation', { name: 'Main navigation' });
   await expect(nav.getByRole('link', { name: 'Writing' })).toHaveCount(0);
-  await nav.getByRole('link', { name: 'Mentoring' }).click();
-  await expect(page).toHaveURL(/#mentoring$/);
-  await expect(page.getByRole('link', { name: 'Let’s connect' })).toHaveAttribute('href', 'https://www.linkedin.com/in/saheed-akinbile/');
+  await nav.getByRole('link', { name: 'Let’s talk' }).click();
+  await expect(page).toHaveURL(/#contact$/);
+  await expect(page.getByRole('link', { name: 'Say hello on LinkedIn' })).toHaveAttribute('href', 'https://www.linkedin.com/in/saheed-akinbile/');
   await page.getByRole('contentinfo').getByRole('link', { name: 'Writing', exact: true }).click();
   await expect(page).toHaveURL(/\/writing\/$/);
   await context.close();
 });
 
 for (const width of [360, 768, 1440]) {
-  test(`content fits a ${width}px screen and images load`, async ({ page }) => {
+  test(`content fits a ${width}px screen without browser errors`, async ({ page }) => {
     const errors: string[] = [];
     page.on('pageerror', error => errors.push(error.message));
     await page.setViewportSize({ width, height: 1000 });
     await page.goto('/');
     await page.evaluate(() => document.fonts.ready);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
-    for (const image of await page.locator('img').all()) {
-      await image.scrollIntoViewIfNeeded();
-      await expect(image).toBeVisible();
-      await expect.poll(() => image.evaluate(element => {
-        const image = element as HTMLImageElement;
-        return image.complete && image.naturalWidth > 0;
-      })).toBe(true);
-    }
+    await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
+    await expect(page.getByRole('link', { name: 'What I’m building' })).toBeVisible();
     expect(errors).toEqual([]);
   });
 }

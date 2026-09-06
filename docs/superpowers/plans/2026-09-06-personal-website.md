@@ -8,24 +8,24 @@
 
 ## Constraints
 
-Lead with Saheed, Minicor, and San Francisco. Include Lucky Star, agriculture, Nigerian roots, and mentorship. Writing is a supporting feature. No invented personal facts or contact details. Keep production publication separate from the preview review. Preserve old URLs, keyboard support, reduced motion, and draft filtering.
+Lead with Saheed, Minicor, and San Francisco. Include Lucky Star, agriculture, and Nigerian roots, with mentoring mentioned briefly in the biography. Use the user-selected charcoal, white, and burgundy palette, restore `saheed.` and `s.`, and remove personal photos. Writing is a supporting feature. No invented personal facts or contact details. Keep production publication separate from the preview review. Preserve old URLs, keyboard support, reduced motion, and draft filtering.
 
 ## Implementation
 
 - [x] Configure Astro, Netlify, local fonts, and browser checks.
 - [x] Build Markdown blog routes, RSS, draft filtering, and Pages CMS configuration.
-- [x] Research public founder/community posts and source a real candid photograph.
-- [x] Rebuild the visual identity and homepage around a direct greeting, current work, background, and mentoring. Correct Lucky Star. Move writing to the footer.
+- [x] Research public founder/community posts for accurate biographical copy.
+- [x] Rebuild the visual identity and homepage around a direct greeting, current work, and background. Correct Lucky Star. Move writing to the footer. Apply the requested neutral/burgundy palette and branding, remove photos, and reduce mentoring to one biographical line.
 - [x] Update the shared blog layout, favicon, and generated social image.
 - [x] Complete Astro checks, Node 24 build, browser checks, visual inspection, and independent review of the revision.
 - [x] Push the reviewed revision to the draft PR and keep the local preview available.
 
-## Verified revision
+## Verification record
 
-- Astro check: 19 files, 0 errors, 0 warnings, 0 hints.
+- Astro check: 18 files, 0 errors, 0 warnings, 0 hints.
 - Production build passes with Node 24.
-- All nine Chrome tests pass, including no-JavaScript mentoring/blog navigation, lazy image loading, 360/768/1440px layouts, and automated WCAG AA checks on home and article pages.
-- Independent review confirmed 320px layouts, including no JavaScript and writing pages. Its two findings were fixed: use the full YC Spring 2026 batch label and a white keyboard focus outline on the navy Minicor card. The focus state was then verified in Chrome.
+- All nine Chrome tests pass, including no-JavaScript contact/blog navigation, 360/768/1440px layouts, and automated WCAG AA checks on home and article pages.
+- Independent review of the latest refinement confirmed 320px, 768px, and desktop layouts, focus visibility, internal links, and removal of photos and the dedicated mentoring panel. No actionable defects were found.
 - Home desktop/mobile, writing index, article, and regenerated social card visually inspected.
 - Native anchor navigation is immediate without JavaScript; enhanced navigation respects reduced motion.
 
