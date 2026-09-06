@@ -22,12 +22,10 @@ npm run preview
 
 The repository includes a ready-to-use [Pages CMS configuration](https://pagescms.org/docs/configuration/) in `.pages.yml`. It provides a rich-text editor, image uploads, title, description, topic, date, and a **Keep as draft** toggle. The content remains ordinary Markdown in your GitHub repository.
 
-After this branch is available on GitHub:
-
 1. Open [Pages CMS](https://app.pagescms.org/) and sign in with GitHub.
-2. Authorize the GitHub app for `sakin070/saheed-portfolio` and select the website branch. Use `master` after the redesign has been merged.
+2. Authorize the GitHub app for `sakin070/saheed-portfolio` and select `master`.
 3. Open **Blog posts**, create a post, and write. Keep **Keep as draft** enabled while editing.
-4. Turn off **Keep as draft** and save when ready to publish. Once Netlify is connected to this branch, the commit triggers a rebuild.
+4. Turn off **Keep as draft** and save when ready to publish. The commit to `master` triggers a Netlify rebuild.
 
 **Account setup is not yet performed.** The GitHub authorization happens in your browser; the website does not contain a token or require a separate database. Pages CMS is an optional editor: you can always edit the Markdown directly on GitHub or locally.
 
@@ -47,7 +45,7 @@ Your post goes here. Markdown headings, links, lists, and images work.
 
 Drafts are excluded from the writing index, article routes, RSS, and sitemap. Writing is linked in the footer rather than featured on the homepage. A missing `draft` field defaults to `true`. Dates are display metadata, not scheduled publishing. Upload images through the CMS, or add them to `public/images/posts/` and reference `/images/posts/filename.jpg`.
 
-The included **What I’m building toward** essay is new copy drafted from Saheed’s supplied background for review. It is intentionally visible in the unpublished preview (`draft: false`); review or revise it before approving production publication. Set `draft: true` to hide it.
+The included **What I’m building toward** essay is published (`draft: false`). Set `draft: true` to hide it.
 
 ## Content and design
 
@@ -65,7 +63,7 @@ The legacy Gatsby source in `src/`, `static/`, and `gatsby-config.js` is retaine
 
 ## Netlify
 
-The existing project is `agitated-mclean-65a971`, connected to `sakin070/saheed-portfolio`. This branch is `codex/founder-website`; the production branch remains `master` until the redesign is approved.
+The project is `agitated-mclean-65a971`, connected to `sakin070/saheed-portfolio`. The production branch is `master`, deployed at https://www.saheedakinbile.com/.
 
 `netlify.toml` supplies:
 
@@ -75,9 +73,39 @@ The existing project is `agitated-mclean-65a971`, connected to `sakin070/saheed-
 - Redirects from the old `/projects` and `/about` routes
 - Basic security headers and immutable caching for hashed assets
 
-The old project uses a 2020 build environment. Before the first production deployment, check Netlify’s build image is a currently supported image capable of running Node 24. An obsolete build image may require an update in project settings even though the repository pins a current Node version. Keep the existing custom domain.
+Build locally and review changes in a pull request, then merge to `master` to trigger production. A manual draft deploy can also upload `dist` without changing production.
 
-Build locally, review the site and initial essay, then merge the approved branch to `master` to trigger production. A manual draft deploy can also upload `dist` without changing production. Netlify account access is not configured in this workspace.
+## Search and AI discovery
+
+The site serves its content as static HTML, allows crawlers in `robots.txt`, and exposes canonical URLs, a sitemap, and an RSS feed. The homepage identifies Saheed with linked `ProfilePage` and `Person` structured data. Published posts use `BlogPosting` with the visible title, description, author, category, and publication date. Publication dates come from the post frontmatter; a rebuild does not invent an updated date. Error pages are marked `noindex` and omit structured data.
+
+### Google Search Console
+
+1. Open [Search Console](https://search.google.com/search-console). Select an existing verified property covering `https://www.saheedakinbile.com/`, or add that exact address as a **URL-prefix** property.
+2. If verification is needed, choose **HTML tag**. Copy only the `content` value from Google's tag into a Netlify build environment variable named `GOOGLE_SITE_VERIFICATION`, then rebuild the site. For a local build, copy `.env.example` to `.env` and fill in that value. Leave it blank when unused; no placeholder tag is published. A Domain property instead requires DNS verification.
+3. Once the tag is live, click **Verify** in Search Console. Keep the variable configured after verification. Existing verification through another method does not need a new tag.
+4. Submit `https://www.saheedakinbile.com/sitemap.xml` in **Sitemaps**.
+5. Use **URL Inspection** for the homepage and a published post, such as `https://www.saheedakinbile.com/writing/what-im-building-toward/`. Check the indexed version, test the live URL, and request indexing after the deployment. Follow up on any exclusion reported in Page indexing.
+
+See Google's [ownership verification instructions](https://support.google.com/webmasters/answer/9008080) and [URL Inspection guide](https://support.google.com/webmasters/answer/9012289). Adding a tag only makes verification possible; it does not verify ownership, submit the sitemap, or confirm indexing by itself.
+
+### Check a deployment
+
+```sh
+npm run check:discovery
+```
+
+This checks production without changing it. To check an already running local production build instead:
+
+```sh
+DISCOVERY_BASE_URL=http://127.0.0.1:4321 npm run check:discovery
+```
+
+The checks cover the current allow-all robots policy, sitemap/RSS agreement, canonical URLs, article/author metadata, HTML readable without JavaScript, and homepage responses to Googlebot, OAI-SearchBot, and Claude-SearchBot user agents. The same checks run against a fresh local build in `npm test`.
+
+Netlify [marks Deploy Previews as `noindex`](https://docs.netlify.com/deploy/deploy-overview/#search-engine-indexing), so they intentionally fail the indexability assertions. Use the production domain for the final deployment check.
+
+These are crawl-readiness checks from the machine running them. They cannot prove access from a search provider's IP addresses, actual indexing, rankings, or inclusion in AI answers. Use Search Console to inspect Google's index and performance; assess AI visibility separately. Google's [AI search guidance](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide) builds on the same crawlability and content fundamentals.
 
 ## Verification
 
@@ -89,4 +117,4 @@ npm test
 
 Local browser tests use installed Google Chrome. To use bundled Chromium, run `npx playwright install chromium` and `PLAYWRIGHT_CHANNEL=chromium npm test`. In CI the default is bundled Chromium.
 
-Checks cover visitor navigation, mobile keyboard behavior, progressive enhancement without JavaScript, viewport overflow, blog reading, RSS, canonical URLs, and automated WCAG AA accessibility. Automated accessibility checks supplement visual and keyboard review; they are not an accessibility certification.
+Checks cover visitor navigation, mobile keyboard behavior, progressive enhancement without JavaScript, viewport overflow, blog reading, feeds, crawl readiness, structured data, and automated WCAG AA accessibility. To exercise the optional verification tag, run `GOOGLE_SITE_VERIFICATION=test-token npm test -- --grep 'Google verification'`. Automated accessibility checks supplement visual and keyboard review; they are not an accessibility certification.

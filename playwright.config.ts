@@ -12,5 +12,7 @@ export default defineConfig({
     command: 'npm run build && node scripts/preview-test.mjs',
     url: 'http://127.0.0.1:4322',
     reuseExistingServer: false,
+    // Keep verification tests independent of any developer's local .env files.
+    env: { GOOGLE_SITE_VERIFICATION: process.env.GOOGLE_SITE_VERIFICATION ?? '' },
   },
 });
