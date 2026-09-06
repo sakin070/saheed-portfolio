@@ -1,6 +1,6 @@
 # Saheed Akinbile — personal website
 
-A personal site for a founder and engineer in San Francisco, connecting Minicor, entrepreneurship, agriculture, and Nigerian roots. The design uses charcoal and white with restrained burgundy accents, a typographic introduction, the `saheed.` wordmark and `s.` icon, and locally hosted DM Sans and Bricolage Grotesque. Mentoring is a brief biographical detail; there is no separate mentoring offering. Built with Astro, local fonts, and a small amount of browser JavaScript. Netlify serves static HTML.
+A personal site for a founder and engineer in San Francisco, connecting Minicor, entrepreneurship, agriculture, and Nigerian roots. The design uses charcoal and white with restrained muted green accents, a typographic introduction, the `saheed.` wordmark and `s.` icon, and locally hosted DM Sans and Bricolage Grotesque. Mentoring is a brief biographical detail; there is no separate mentoring offering. Built with Astro, local fonts, and a small amount of browser JavaScript. Netlify serves static HTML.
 
 ## Run locally
 

@@ -8,14 +8,14 @@
 
 ## Constraints
 
-Lead with Saheed, Minicor, and San Francisco. Include Lucky Star, agriculture, and Nigerian roots, with mentoring mentioned briefly in the biography. Use the user-selected charcoal, white, and burgundy palette, restore `saheed.` and `s.`, and remove personal photos. Writing is a supporting feature. No invented personal facts or contact details. Keep production publication separate from the preview review. Preserve old URLs, keyboard support, reduced motion, and draft filtering.
+Lead with Saheed, Minicor, and San Francisco. Include Lucky Star, agriculture, and Nigerian roots, with mentoring mentioned briefly in the biography. Use the charcoal and white palette with a muted green accent trial requested by the user, restore `saheed.` and `s.`, and remove personal photos. Writing is a supporting feature. No invented personal facts or contact details. Keep production publication separate from the preview review. Preserve old URLs, keyboard support, reduced motion, and draft filtering.
 
 ## Implementation
 
 - [x] Configure Astro, Netlify, local fonts, and browser checks.
 - [x] Build Markdown blog routes, RSS, draft filtering, and Pages CMS configuration.
 - [x] Research public founder/community posts for accurate biographical copy.
-- [x] Rebuild the visual identity and homepage around a direct greeting, current work, and background. Correct Lucky Star. Move writing to the footer. Apply the requested neutral/burgundy palette and branding, remove photos, and reduce mentoring to one biographical line.
+- [x] Rebuild the visual identity and homepage around a direct greeting, current work, and background. Correct Lucky Star. Move writing to the footer. Apply the requested neutral palette with muted green accents and branding, remove photos, and reduce mentoring to one biographical line.
 - [x] Update the shared blog layout, favicon, and generated social image.
 - [x] Complete Astro checks, Node 24 build, browser checks, visual inspection, and independent review of the revision.
 - [x] Push the reviewed revision to the draft PR and keep the local preview available.

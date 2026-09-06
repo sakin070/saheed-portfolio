@@ -4,7 +4,7 @@ Build a personal, open, and approachable website for Saheed as a founder, engine
 
 ## Design and content
 
-A charcoal-and-white page with restrained burgundy accents, selected explicitly by the user. Keep Bricolage Grotesque headings, DM Sans body text, and rounded cards. Lead with a typographic “Hi, I’m Saheed” introduction. Use the lowercase `saheed.` wordmark and `s.` favicon. Personal photographs are removed from the site, article byline, social preview, structured data, and public assets.
+A charcoal-and-white page with restrained muted green accents, being tried at the user’s request. Keep Bricolage Grotesque headings, DM Sans body text, and rounded cards. Lead with a typographic “Hi, I’m Saheed” introduction. Use the lowercase `saheed.` wordmark and `s.` favicon. Personal photographs are removed from the site, article byline, social preview, structured data, and public assets.
 
 The homepage flows through an introduction, current work, other businesses, background and interests, and contact. Minicor and the founder’s current SF context remain prominent. Writing lives in the footer and on its own pages; there is no homepage post section or primary navigation item for it.
 
