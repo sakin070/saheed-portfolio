@@ -16,6 +16,10 @@ The homepage flows through an introduction, current work, other businesses, back
 - Mentoring: retain only a brief mention in the biography. The user rejected the dedicated mentoring panel; remove its section, navigation item, and service-style invitation.
 - The tone reflects his public writing about curiosity, conversations, and learning. New first-person copy is review copy, not a claim to verbatim quotations.
 
+In the Ford paragraph, lead with automatic parking and trailer safety boundaries and give those examples the visual emphasis. Follow with driver-requested changes to steering, suspension, and acceleration. Keep this emphasis consistent in the opening essay.
+
+Lucky Star’s media activity was mainly on Twitter and Instagram, according to the user. He wants a fuller media reference than the Guardian report. A verified original product or launch post is a suitable replacement; no matching social account has been identified yet. The public ESS Android repository contains Lucky Star branding, but its reviewed website/support links do not identify the social accounts.
+
 ## Architecture
 
 Astro static output, Node 24, local font assets, no client framework, database, analytics, or external embeds. Source lives in `site/`, public assets in `public/`; legacy Gatsby source and private legacy documents stay outside build input. Shared layout owns metadata; components own sections. A small script controls the mobile menu, with usable navigation when JavaScript is disabled.
@@ -41,6 +45,7 @@ Run Astro checks, a Node 24 production build, and Chrome browser tests. Verify h
 - https://www.linkedin.com/posts/saheed-akinbile_thank-you-so-much-for-having-me-activity-7300168708314877952-2M2g — Building for Scale guest talk
 - https://guardian.ng/news/firm-rewards-customers-with-n1m-prize-gifts/ — Lucky Star and Saheed’s role
 - https://lslga.org/list-of-licenced-operators-by-lagos-state-lotteries-and-gaming-authority/ — “Ess Lottory Services Limited” scratch-card entry, confirmed relevant by the user; historical dates, not evidence of current licensing
+- https://github.com/sakin070/ess-manager-android — public ESS Android project containing Lucky Star branding; research lead, not a social-media reference
 - https://www.softwareforlove.com/ — nonprofit website linked from biography
 - Direct user statements — love of AI, Minicor’s reasoning and execution approach, farms, personal motivations, interests, love of mentoring, mechanical engineering plans and move toward software, deep tech and hard tech interests, software and physical systems work at Ford, audience and tone
 
