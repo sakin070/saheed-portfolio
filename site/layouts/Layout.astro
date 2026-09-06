@@ -12,7 +12,7 @@ const schema = {
   '@context': 'https://schema.org', '@type': 'Person', name: profile.name,
   url: Astro.site?.href,
   jobTitle: 'Co-founder and CTO', worksFor: { '@type': 'Organization', name: 'Minicor', url: profile.minicor },
-  sameAs: [profile.linkedin, profile.github],
+  sameAs: [profile.linkedin, profile.github, profile.x],
 };
 ---
 <!doctype html>
@@ -31,6 +31,7 @@ const schema = {
     <meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Saheed Akinbile — Founder and engineer. Co-founder & CTO of Minicor, based in San Francisco." />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content={profile.xHandle} />
     {noindex && <meta name="robots" content="noindex" />}
     <script is:inline type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g, '\\u003c')} />
   </head>

@@ -145,7 +145,7 @@
   .contact-link { display: flex; align-items: center; gap: 22px; border-bottom: 1px solid #cbd8ce; color: var(--accent); font-size: 16px; padding-block: 13px; }
   .contact-link:hover { color: var(--accent-dark); }
   .footer-bottom { border-top: 1px solid var(--line); padding-block: 25px; display: flex; justify-content: space-between; align-items: center; gap: 24px; color: var(--muted); font-size: 10px; }
-  .footer-links { display: flex; gap: 27px; }
+  .footer-links { display: flex; flex-wrap: wrap; gap: 8px 27px; }
   .footer-links > a { display: inline-flex; align-items: center; gap: 5px; padding-block: 8px; }
   .footer-links > a:hover { color: var(--accent); }
   .footer-links .arrow { width: 11px; height: 11px; }

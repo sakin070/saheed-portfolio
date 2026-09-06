@@ -35,6 +35,7 @@ Run Astro checks, a Node 24 production build, and Chrome browser tests. Verify h
 - https://minicor.com/ — company positioning
 - https://github.com/sakin070 — portrait and profile
 - https://www.linkedin.com/in/saheed-akinbile/ — contact and SF context
+- https://x.com/sahee_d — X profile supplied by the user; linked in the footer and page metadata
 - https://www.linkedin.com/posts/saheed-akinbile_some-news-im-deeply-grateful-to-share-activity-7435814713696862208--6mj — seven YC applications, three interviews, gratitude to mentors and community
 - https://www.linkedin.com/posts/saheed-akinbile_sometimes-you-have-to-unlearn-to-progress-activity-7351301448418091008--8V6 — curiosity and connecting with people
 - https://www.linkedin.com/posts/saheed-akinbile_thank-you-so-much-for-having-me-activity-7300168708314877952-2M2g — Building for Scale guest talk
