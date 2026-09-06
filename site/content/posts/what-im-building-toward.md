@@ -1,6 +1,6 @@
 ---
 title: "What I’m building toward"
-description: "Why I love building Minicor, how we approach AI and execution, and my love of things that move."
+description: "Building Minicor, AI and execution, and why I’m drawn to work with an impact in the physical world."
 date: 2026-09-06
 category: "Perspective"
 draft: false
@@ -22,13 +22,13 @@ Those are the kinds of problems that pull me in: code, sensors, and physical sys
 
 Along the way, I built and launched Lucky Star, a lottery product under ESS Nigeria Limited. Today, alongside my work in technology, I own an 18-hectare oil palm plantation and a layer poultry farm.
 
-On paper, those might seem like separate interests. For me, there is a thread running through them.
+I like building things that work in the physical world. Agriculture is one way to do that; Lucky Star was another.
 
 ## One of the things that drives me
 
 Making Nigeria a better place to live is one of the things that drives me.
 
-It’s part of what draws me to building businesses in technology and agriculture. There is value in building the tools businesses use, and there is value in growing what people need. I’m interested in both.
+That shapes the kinds of businesses I’m interested in building. The farms are one way I’m putting that into practice today.
 
 That connection to home is personal. It sits alongside my curiosity about technology and the satisfaction of making something useful.
 

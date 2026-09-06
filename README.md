@@ -1,6 +1,6 @@
 # Saheed Akinbile — personal website
 
-A personal site for a founder and engineer in San Francisco, connecting his love of AI and building Minicor, things that move and the software behind them, entrepreneurship, agriculture, and Nigerian roots. The design uses charcoal and white with restrained muted green accents, a typographic introduction, the `saheed.` wordmark and `s.` icon, and locally hosted DM Sans and Bricolage Grotesque. Mentoring is a brief biographical detail; there is no separate mentoring offering. Built with Astro, local fonts, and a small amount of browser JavaScript. Netlify serves static HTML.
+A personal site for a founder and engineer in San Francisco. The introduction states his role at Minicor plainly and connects his love of things that move to building businesses with an impact in the physical world. His farms and Lucky Star are examples of that broader interest. The Minicor section explains his interest in AI, and the biography connects his Nigerian roots, engineering work, and entrepreneurship. The design uses charcoal and white with restrained muted green accents, a typographic introduction, the `saheed.` wordmark and `s.` icon, and locally hosted DM Sans and Bricolage Grotesque. Mentoring is a brief biographical detail; there is no separate mentoring offering. Built with Astro, local fonts, and a small amount of browser JavaScript. Netlify serves static HTML.
 
 ## Run locally
 
