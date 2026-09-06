@@ -6,13 +6,13 @@ Build a personal, open, and approachable website for Saheed as a founder, engine
 
 A charcoal-and-white page with restrained muted green accents, being tried at the user’s request. Keep Bricolage Grotesque headings, DM Sans body text, and rounded cards. Lead with a typographic “Hi, I’m Saheed” introduction. Use the lowercase `saheed.` wordmark and `s.` favicon. Personal photographs are removed from the site, article byline, social preview, structured data, and public assets.
 
-The homepage flows through an introduction, current work, other businesses, background and interests, and contact. Minicor and the founder’s current SF context remain prominent. Writing lives in the footer and on its own pages; there is no homepage post section or primary navigation item for it.
+The homepage flows through an introduction, current work, other businesses, background, and contact. Minicor and the founder’s current SF context remain prominent. Writing lives in the footer and on its own pages; there is no homepage post section or primary navigation item for it.
 
 - Minicor: co-founder & CTO, YC Spring 2026; desktop and browser workflows exposed as APIs. The seven applications and three interviews come from Saheed’s public YC acceptance post.
 - Other businesses: an 18-hectare oil palm plantation, a layer chicken farm, and Lucky Star lottery. Ownership/launch claims are user supplied; Lucky Star is also corroborated by the Guardian report.
-- Personal story: Lagos, moving to Canada at 18, software engineering at the University of Ottawa, now SF. Morgan Stanley, Ford, Kinaxis, and Software for Love are brief background rather than a résumé section.
+- Personal story: Lagos, moving to Canada at 18, software engineering at the University of Ottawa, now SF. Make substantial hardware work at Ford explicit in the introduction and biography. This is user-supplied experience; do not invent projects, technologies, role titles, or dates. Morgan Stanley, Kinaxis, and Software for Love provide additional background.
 - Long-term ambition: businesses that make Nigeria more independent.
-- Interests: drones, defense tech, MMA, boxing.
+- Personal interests remain available as background for writing, but the user asked to remove the homepage interests strip.
 - Mentoring: retain only a brief mention in the biography. The user rejected the dedicated mentoring panel; remove its section, navigation item, and service-style invitation.
 - The tone reflects his public writing about curiosity, conversations, and learning. New first-person copy is review copy, not a claim to verbatim quotations.
 
@@ -35,12 +35,12 @@ Run Astro checks, a Node 24 production build, and Chrome browser tests. Verify h
 - https://minicor.com/ — company positioning
 - https://github.com/sakin070 — portrait and profile
 - https://www.linkedin.com/in/saheed-akinbile/ — contact and SF context
-- https://x.com/sahee_d — X profile supplied by the user; linked in the footer and page metadata
+- https://x.com/sahee_d — X profile supplied by the user; a prominent contact option alongside LinkedIn, also linked in the footer and page metadata
 - https://www.linkedin.com/posts/saheed-akinbile_some-news-im-deeply-grateful-to-share-activity-7435814713696862208--6mj — seven YC applications, three interviews, gratitude to mentors and community
 - https://www.linkedin.com/posts/saheed-akinbile_sometimes-you-have-to-unlearn-to-progress-activity-7351301448418091008--8V6 — curiosity and connecting with people
 - https://www.linkedin.com/posts/saheed-akinbile_thank-you-so-much-for-having-me-activity-7300168708314877952-2M2g — Building for Scale guest talk
 - https://guardian.ng/news/firm-rewards-customers-with-n1m-prize-gifts/ — Lucky Star and Saheed’s role
 - https://www.softwareforlove.com/ — nonprofit website linked from biography
-- Direct user statements — farms, long-term ambition, interests, love of mentoring, audience and tone
+- Direct user statements — farms, long-term ambition, interests, love of mentoring, hardware work at Ford, audience and tone
 
 The site uses no personal photographs or copied reference-site assets.

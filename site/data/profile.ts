@@ -1,6 +1,6 @@
 export const profile = {
   name: 'Saheed Akinbile',
-  description: 'Saheed Akinbile. Founder and engineer, co-founder & CTO of Minicor (YC Spring 2026). Building across software and agriculture, based in San Francisco.',
+  description: 'Saheed Akinbile. Co-founder & CTO of Minicor (YC Spring 2026), based in San Francisco. A background in software, hardware at Ford, and entrepreneurship.',
   linkedin: 'https://www.linkedin.com/in/saheed-akinbile/',
   github: 'https://github.com/sakin070',
   x: 'https://x.com/sahee_d',
