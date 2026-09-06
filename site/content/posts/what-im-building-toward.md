@@ -1,6 +1,6 @@
 ---
 title: "What I’m building toward"
-description: "From cameras and drive modes at Ford to Minicor and agriculture. The thread that connects the things I build."
+description: "A love of things that move, the pull toward software, and the businesses I build today."
 date: 2026-09-06
 category: "Perspective"
 draft: false
@@ -10,9 +10,13 @@ I’m based in San Francisco, building Minicor. We help AI companies connect to 
 
 But a company bio only tells part of the story.
 
-I grew up in Lagos and moved to Canada at 18. I studied software engineering at the University of Ottawa.
+I grew up in Lagos and moved to Canada at 18, planning to become a mechanical engineer. I love things that move. Software won me over, though, and I studied software engineering at the University of Ottawa.
 
-At Ford, I was part of the camera team and later worked on drive modes. I helped build software that used information about a vehicle’s surroundings to make decisions about where to park and when to switch drive modes. The code had a direct connection to what a vehicle did in the world.
+My interest in physical systems stayed with me. It’s what draws me to deep tech and hard tech, especially where hardware and software meet.
+
+At Ford, I was part of the camera team and later worked on drive modes. My work also touched parking and vehicle maintenance. I worked on software that translated driver requests into changes in steering feel, suspension stiffness, and acceleration, and used sensor data to calculate safety boundaries with a trailer attached.
+
+Those are the kinds of problems that pull me in: code, sensors, and physical systems working together.
 
 Along the way, I launched a lottery company called Lucky Star. Today, alongside my work in technology, I own an 18-hectare oil palm plantation and a layer poultry farm.
 

@@ -8,7 +8,7 @@
 
 ## Constraints
 
-Lead with Saheed, Minicor, and San Francisco. Include Lucky Star, agriculture, Nigerian roots, and the user’s camera and drive modes work at Ford, explaining how software informed parking and driving decisions, with mentoring mentioned briefly in the biography. Offer X and LinkedIn as equal contact options. Remove the homepage interests strip. Use the charcoal and white palette with a muted green accent trial requested by the user, restore `saheed.` and `s.`, and remove personal photos. Writing is a supporting feature. No invented personal facts or contact details. Keep production publication separate from the preview review. Preserve old URLs, keyboard support, reduced motion, and draft filtering.
+Lead with Saheed, Minicor, and San Francisco. Include Lucky Star, agriculture, Nigerian roots, and the user’s love of things that move, his original mechanical engineering plans and choice of software engineering, and his interest in deep tech and hard tech, supported by concrete Ford examples of software translating driver requests and sensor data into vehicle behavior, with mentoring mentioned briefly in the biography. Offer X and LinkedIn as equal contact options. Remove the homepage interests strip. Use the charcoal and white palette with a muted green accent trial requested by the user, restore `saheed.` and `s.`, and remove personal photos. Writing is a supporting feature. No invented personal facts or contact details. Keep production publication separate from the preview review. Preserve old URLs, keyboard support, reduced motion, and draft filtering.
 
 ## Implementation
 

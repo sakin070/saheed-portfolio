@@ -1,6 +1,6 @@
 # Saheed Akinbile — personal website
 
-A personal site for a founder and engineer in San Francisco, connecting Minicor, vehicle software at Ford, entrepreneurship, agriculture, and Nigerian roots. The design uses charcoal and white with restrained muted green accents, a typographic introduction, the `saheed.` wordmark and `s.` icon, and locally hosted DM Sans and Bricolage Grotesque. Mentoring is a brief biographical detail; there is no separate mentoring offering. Built with Astro, local fonts, and a small amount of browser JavaScript. Netlify serves static HTML.
+A personal site for a founder and engineer in San Francisco, connecting Minicor, a love of things that move and the software behind them, entrepreneurship, agriculture, and Nigerian roots. The design uses charcoal and white with restrained muted green accents, a typographic introduction, the `saheed.` wordmark and `s.` icon, and locally hosted DM Sans and Bricolage Grotesque. Mentoring is a brief biographical detail; there is no separate mentoring offering. Built with Astro, local fonts, and a small amount of browser JavaScript. Netlify serves static HTML.
 
 ## Run locally
 
@@ -59,7 +59,7 @@ The included **What I’m building toward** essay is new copy drafted from Sahee
 - `public/images/`: typographic social card and blog media. Personal photographs are not included.
 - `scripts/create-social.mjs`: regenerate the social card using Playwright and local fonts.
 
-Biographical copy uses Saheed’s current site, Minicor’s YC profile, his public posts about networking and getting into YC, and details he supplied directly, including his work on Ford’s camera team and drive modes, using information about a vehicle’s surroundings for parking and drive mode decisions. Source links are recorded in the design spec. The site and link preview use no personal photos. The opening essay and other first-person copy are new review copy. There are no invented testimonials, mentoring counts, contact emails, or personal hobbies.
+Biographical copy uses Saheed’s current site, Minicor’s YC profile, his public posts about networking and getting into YC, and details he supplied directly, including his original plan to become a mechanical engineer in Canada, the pull toward software engineering, his love of deep tech and hard tech, and work at Ford across cameras, drive modes, and vehicle maintenance. His examples include translating driver requests into steering, suspension, and acceleration changes, and using sensor data to calculate safety boundaries with a trailer attached. Source links are recorded in the design spec. The site and link preview use no personal photos. The opening essay and other first-person copy are new review copy. There are no invented testimonials, mentoring counts, contact emails, or personal hobbies.
 
 The legacy Gatsby source in `src/`, `static/`, and `gatsby-config.js` is retained for reference. Astro reads only `site/` and `public/`. Old résumés, transcripts, and bundled Font Awesome files are not copied into the new deployment.
 
