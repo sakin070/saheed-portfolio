@@ -6,9 +6,9 @@ category: "Perspective"
 draft: false
 ---
 
-I love AI, and I love building Minicor. We’re making computer use deterministic: using AI for reasoning and keeping execution under human control.
+I’m excited about the work we haven’t been able to automate. At Minicor, we’re building deterministic computer use to automate desktop and browser tasks that previously couldn’t be automated.
 
-We turn desktop and browser workflows into APIs. The goal is to run them through explicit, predictable steps rather than leave consequential runtime decisions to an AI agent. That matters especially in medicine, insurance, and finance. It’s the work I’m excited to do every day.
+We expose those workflows as APIs. AI handles the reasoning, while a predictable runtime executes the steps under human control. In medicine, insurance, and finance, there’s a lot riding on getting it right. I want Minicor to help people automate that work and stay in control.
 
 But a company bio only tells part of the story.
 
