@@ -1,6 +1,6 @@
 ---
 title: "What I’m building toward"
-description: "Software, hardware, and agriculture. Roots in Nigeria. The thread that connects the things I build."
+description: "From cameras and drive modes at Ford to Minicor and agriculture. The thread that connects the things I build."
 date: 2026-09-06
 category: "Perspective"
 draft: false
@@ -10,7 +10,11 @@ I’m based in San Francisco, building Minicor. We help AI companies connect to 
 
 But a company bio only tells part of the story.
 
-I grew up in Lagos and moved to Canada at 18. I studied software engineering at the University of Ottawa, and my engineering experience includes substantial hardware work at Ford as well as software. Along the way, I launched a lottery company called Lucky Star. Today, alongside my work in technology, I own an 18-hectare oil palm plantation and a layer poultry farm.
+I grew up in Lagos and moved to Canada at 18. I studied software engineering at the University of Ottawa.
+
+At Ford, I was part of the camera team and later worked on drive modes. I helped build software that used information about a vehicle’s surroundings to make decisions about where to park and when to switch drive modes. The code had a direct connection to what a vehicle did in the world.
+
+Along the way, I launched a lottery company called Lucky Star. Today, alongside my work in technology, I own an 18-hectare oil palm plantation and a layer poultry farm.
 
 On paper, those might seem like separate interests. For me, there is a thread running through them.
 
