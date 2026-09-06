@@ -77,3 +77,6 @@ dist/
 test-results/
 playwright-report/
 .netlify/
+
+# Local agent planning notes
+/docs/superpowers/
