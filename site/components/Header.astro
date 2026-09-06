@@ -1,0 +1,52 @@
+---
+import Arrow from './Arrow.astro';
+const home = Astro.url.pathname === '/';
+---
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="wordmark" href="/" aria-label="Saheed Akinbile — home">saheed<span>.</span></a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-navigation" hidden>
+      <span></span><span></span>
+    </button>
+    <nav id="main-navigation" class="main-nav" aria-label="Main navigation">
+      <a href={`${home ? '' : '/'}#about`}>About</a>
+      <a href={`${home ? '' : '/'}#work`}>Building</a>
+      <a class="nav-contact" href={`${home ? '' : '/'}#contact`}><span>Let’s talk</span><Arrow diagonal /></a>
+    </nav>
+  </div>
+</header>
+<script>
+  const toggle = document.querySelector<HTMLButtonElement>('.menu-toggle');
+  const nav = document.querySelector<HTMLElement>('.main-nav');
+  if (toggle && nav) {
+    toggle.hidden = false;
+    document.documentElement.classList.add('has-menu');
+    function setMenu(open: boolean) {
+      toggle!.setAttribute('aria-expanded', String(open));
+      toggle!.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      nav!.classList.toggle('is-open', open);
+    }
+    toggle.addEventListener('click', () => setMenu(toggle.getAttribute('aria-expanded') !== 'true'));
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+        setMenu(false);
+        toggle.focus();
+      }
+    });
+    nav.addEventListener('click', event => {
+      const link = (event.target as HTMLElement).closest<HTMLAnchorElement>('a');
+      if (!link) return;
+      setMenu(false);
+      if (link.hash && link.pathname === location.pathname) {
+        const target = document.querySelector<HTMLElement>(link.hash);
+        if (target) {
+          target.setAttribute('tabindex', '-1');
+          target.focus({ preventScroll: true });
+        }
+      }
+    });
+    document.addEventListener('click', event => {
+      if (!(event.target as HTMLElement).closest('.header-inner')) setMenu(false);
+    });
+  }
+</script>

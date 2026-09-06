@@ -1,0 +1,39 @@
+---
+import Arrow from './Arrow.astro';
+import { profile } from '../data/profile';
+---
+<section id="work" class="section container" aria-labelledby="work-title">
+  <div class="section-heading"><div><p class="eyebrow">THE THINGS I BUILD</p><h2 id="work-title">Here’s what I’m up to.</h2></div><p>Building Minicor today.<br /> A few other ventures along the way.</p></div>
+  <article class="featured-work">
+    <div class="featured-copy">
+      <div class="featured-top"><span class="pill"><span class="status-dot"></span> My main focus</span><span class="work-role">Co-founder & CTO</span></div>
+      <h3>Minicor<span aria-hidden="true">↗</span></h3>
+      <p class="featured-intro">Automating what we couldn’t before.</p>
+      <p class="featured-description">At Minicor, we’re building deterministic computer use to automate desktop and browser tasks that previously couldn’t be automated. AI handles the reasoning; a predictable runtime executes the steps under human control. We expose those workflows as APIs.</p>
+      <a class="text-link light-link" href={profile.minicor} target="_blank" rel="noreferrer">Explore Minicor <Arrow diagonal /></a>
+    </div>
+    <aside class="founder-note" aria-label="Why I’m building Minicor">
+      <span class="note-label">WHY I’M BUILDING THIS</span>
+      <h4>The work I want AI to do.</h4>
+      <p>I’m excited about the work we haven’t been able to automate. In medicine, insurance, and finance, there’s a lot riding on getting it right. I want Minicor to help people automate that work and stay in control.</p>
+      <a class="quiet-link" href={profile.ycStory} target="_blank" rel="noreferrer">Our path to YC <Arrow diagonal /></a>
+    </aside>
+  </article>
+  <div class="other-work-heading"><h3>Other ventures</h3></div>
+  <div class="venture-grid">
+    <article class="venture-card lucky-card">
+      <div class="venture-top"><svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M7 15h50v11a7 7 0 0 0 0 14v10H7V40a7 7 0 0 0 0-14V15Z"/><path d="m30 22 4 7 8 2-6 6 1 8-7-4-7 4 1-8-6-6 8-2 4-7ZM47 16v5m0 23v5" /></svg><span>Past venture</span></div>
+      <h3>Lucky Star</h3>
+      <p>I built and launched Lucky Star, a lottery product under ESS Nigeria Limited.</p>
+      <div class="venture-links">
+        <a class="quiet-link" href="https://lslga.org/list-of-licenced-operators-by-lagos-state-lotteries-and-gaming-authority/" target="_blank" rel="noreferrer">Lagos State operators list <Arrow diagonal /></a>
+        <a class="quiet-link" href="https://guardian.ng/news/firm-rewards-customers-with-n1m-prize-gifts/" target="_blank" rel="noreferrer">Read the Guardian coverage <Arrow diagonal /></a>
+      </div>
+    </article>
+    <article class="venture-card farm-card">
+      <div class="venture-top"><svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M29 55c-1-10 1-25 6-34M34 23c-9-8-20-6-26 1m26-2C31 10 20 7 14 9m22 12c1-9 8-15 14-13M35 23c10-8 20-5 23 1M36 24c10 0 17 5 19 11M35 21c-7-3-16 4-18 11M15 55h32" /></svg><span>Personal investments</span></div>
+      <h3>Farming</h3>
+      <p>An 18-hectare oil palm plantation and a poultry farm producing eggs.</p>
+    </article>
+  </div>
+</section>

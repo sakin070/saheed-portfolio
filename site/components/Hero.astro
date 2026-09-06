@@ -1,0 +1,11 @@
+---
+import Arrow from './Arrow.astro';
+import { profile } from '../data/profile';
+---
+<section class="hero container" aria-labelledby="hero-title">
+  <p class="location"><span class="status-dot"></span> San Francisco, by way of Lagos & Canada</p>
+  <h1 id="hero-title">Hi, I’m <span class="hero-name">Saheed<span class="hello-dot">.</span></span><span class="sr-only"> Akinbile</span></h1>
+  <p class="hero-description">Founder, engineer, and entrepreneur.<br />Co-founder & CTO at <a href={profile.minicor} target="_blank" rel="noreferrer">Minicor</a>.</p>
+  <p class="hero-aside">I love things that move, and the software that makes them work.</p>
+  <div class="hero-bottom"><div class="hero-actions"><a class="button button-primary" href="#work">What I’m building <Arrow /></a><a class="quiet-link" href="#about">A little about me <span aria-hidden="true">↓</span></a></div><a class="hero-yc" href={profile.yc} target="_blank" rel="noreferrer"><span class="yc-mark">Y</span><span>Y Combinator <b>Spring ’26</b></span><Arrow diagonal /></a></div>
+</section>

@@ -1,0 +1,11 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PostList from '../../components/PostList.astro';
+import Arrow from '../../components/Arrow.astro';
+import { publishedPosts } from '../../lib/posts';
+const posts = await publishedPosts();
+---
+<Layout title="Writing — Saheed Akinbile" description="Notes on building companies, technology, agriculture, and the things I’m figuring out along the way.">
+  <header class="container blog-header"><p class="eyebrow">A SMALL CORNER OF THE INTERNET</p><h1>Notes & thoughts.</h1><p>Things I’m learning, ideas I’m working through, and the occasional thing I just want to share.</p></header>
+  <section class="container blog-body" aria-label="Blog posts"><div class="blog-toolbar"><span>{posts.length} {posts.length === 1 ? 'NOTE' : 'NOTES'} & COUNTING</span><a href="/rss.xml">Follow via RSS <Arrow diagonal /></a></div><PostList posts={posts} /></section>
+</Layout>

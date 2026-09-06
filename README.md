@@ -1,97 +1,92 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's Clean Portfolio Starter
-</h1>
+# Saheed Akinbile — personal website
 
-Kick off your portfolio project with this portfolio site boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+A personal site for a founder and engineer in San Francisco. The introduction states his role at Minicor plainly and stays personal: “I love things that move, and the software that makes them work.” Ford, his farms, and Lucky Star show his interest in work with a physical impact. Lucky Star appears first as a past venture, followed by one Farming card labeled “Personal investments.” The copy describes the agricultural businesses concisely. The Minicor section leads with automating work that previously couldn’t be automated; a personal note explains why he cares about that possibility in medicine, insurance, and finance. The biography connects his Nigerian roots, engineering work, and entrepreneurship. The design uses charcoal and white with restrained muted green accents, a typographic introduction, the `saheed.` wordmark and `s.` icon, and locally hosted DM Sans and Bricolage Grotesque. Mentoring is a brief biographical detail; there is no separate mentoring offering. Built with Astro, local fonts, and a small amount of browser JavaScript. Netlify serves static HTML.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+## Run locally
 
-## 🚀 Quick start
+Use Node 24 (`nvm use`, if you use nvm).
 
-1.  **Create a Gatsby site.**
+```sh
+npm ci
+npm run dev
+```
 
-    Use the Gatsby CLI to create a new site, specifying the gatsby-clean-portfolio starter.
+Open http://localhost:4321. To serve a production build:
 
-    ```sh
-    # create a new Gatsby site using the clean-portfolio starter
-    gatsby new my-portfolio-starter https://github.com/ugglr/gatsby-clean-portfolio
-    ```
+```sh
+npm run build
+npm run preview
+```
 
-1.  **Start developing.**
+## Writing a blog post in the browser
 
-    Navigate into your new site’s directory and start it up.
+The repository includes a ready-to-use [Pages CMS configuration](https://pagescms.org/docs/configuration/) in `.pages.yml`. It provides a rich-text editor, image uploads, title, description, topic, date, and a **Keep as draft** toggle. The content remains ordinary Markdown in your GitHub repository.
 
-    ```sh
-    cd my-portfolio-starter/
-    gatsby develop
-    ```
+After this branch is available on GitHub:
 
-1.  **Open the source code and start editing!**
+1. Open [Pages CMS](https://app.pagescms.org/) and sign in with GitHub.
+2. Authorize the GitHub app for `sakin070/saheed-portfolio` and select the website branch. Use `master` after the redesign has been merged.
+3. Open **Blog posts**, create a post, and write. Keep **Keep as draft** enabled while editing.
+4. Turn off **Keep as draft** and save when ready to publish. Once Netlify is connected to this branch, the commit triggers a rebuild.
 
-    Your site is now running at `http://localhost:8000`!
+**Account setup is not yet performed.** The GitHub authorization happens in your browser; the website does not contain a token or require a separate database. Pages CMS is an optional editor: you can always edit the Markdown directly on GitHub or locally.
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+A post is a file in `site/content/posts/`:
 
-    Open the `my-clean-portfolio-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+```markdown
+---
+title: "Your post title"
+description: "A short description for the listing and search engines."
+date: 2026-09-06
+category: "Building"
+draft: true
+---
 
-## 🧐 What's inside?
+Your post goes here. Markdown headings, links, lists, and images work.
+```
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+Drafts are excluded from the writing index, article routes, RSS, and sitemap. Writing is linked in the footer rather than featured on the homepage. A missing `draft` field defaults to `true`. Dates are display metadata, not scheduled publishing. Upload images through the CMS, or add them to `public/images/posts/` and reference `/images/posts/filename.jpg`.
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+The included **What I’m building toward** essay is new copy drafted from Saheed’s supplied background for review. It is intentionally visible in the unpublished preview (`draft: false`); review or revise it before approving production publication. Set `draft: true` to hide it.
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+## Content and design
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+- `site/data/profile.ts`: verified social links and links to public founder/community posts.
+- `site/components/`: homepage sections, navigation, and footer.
+- `site/content/posts/`: blog posts.
+- `site/styles/global.css`: responsive layout and visual system.
+- `site/layouts/Layout.astro`: page metadata and structured data.
+- `public/images/`: typographic social card and blog media. Personal photographs are not included.
+- `scripts/create-social.mjs`: regenerate the social card using Playwright and local fonts.
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+Biographical copy uses Saheed’s current site, Minicor’s YC profile, his public posts about networking and getting into YC, and details he supplied directly. Minicor’s story centers on giving AI an impact on everyday work by automating previously unautomatable tasks through deterministic computer use: AI handles reasoning, with execution under human control. Medicine, insurance, and finance describe settings that motivate this work, not claims of existing customers or certifications. Other user-supplied details include his original plan to become a mechanical engineer in Canada, the pull toward software engineering, his love of deep tech and hard tech, and work at Ford across cameras and drive modes. His examples include translating driver requests into steering, suspension, and acceleration changes, automatic parking in a driver-selected spot using camera and sensor data, and using sensor data to calculate safety boundaries with a trailer attached. The site and link preview use no personal photos. The opening essay and other first-person copy are new review copy. There are no invented testimonials, mentoring counts, contact emails, or personal hobbies.
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+The legacy Gatsby source in `src/`, `static/`, and `gatsby-config.js` is retained for reference. Astro reads only `site/` and `public/`. Old résumés, transcripts, and bundled Font Awesome files are not copied into the new deployment.
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+## Netlify
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+The existing project is `agitated-mclean-65a971`, connected to `sakin070/saheed-portfolio`. This branch is `codex/founder-website`; the production branch remains `master` until the redesign is approved.
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+`netlify.toml` supplies:
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+- Build command: `npm run build`
+- Publish directory: `dist`
+- Node version: `24` (also pinned in `.nvmrc`)
+- Redirects from the old `/projects` and `/about` routes
+- Basic security headers and immutable caching for hashed assets
 
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+The old project uses a 2020 build environment. Before the first production deployment, check Netlify’s build image is a currently supported image capable of running Node 24. An obsolete build image may require an update in project settings even though the repository pins a current Node version. Keep the existing custom domain.
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+Build locally, review the site and initial essay, then merge the approved branch to `master` to trigger production. A manual draft deploy can also upload `dist` without changing production. Netlify account access is not configured in this workspace.
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+## Verification
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+```sh
+npm run check
+npm run build
+npm test
+```
 
-## 🎓 Learning Gatsby
+Local browser tests use installed Google Chrome. To use bundled Chromium, run `npx playwright install chromium` and `PLAYWRIGHT_CHANNEL=chromium npm test`. In CI the default is bundled Chromium.
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ugglr/gatsby-clean-portfolio)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+Checks cover visitor navigation, mobile keyboard behavior, progressive enhancement without JavaScript, viewport overflow, blog reading, RSS, canonical URLs, and automated WCAG AA accessibility. Automated accessibility checks supplement visual and keyboard review; they are not an accessibility certification.

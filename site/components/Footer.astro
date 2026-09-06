@@ -1,0 +1,8 @@
+---
+import Arrow from './Arrow.astro';
+import { profile } from '../data/profile';
+---
+<footer id="contact" class="contact-section container">
+  <div class="contact-main"><div><p class="eyebrow">SAY HELLO</p><h2>Let’s cross paths.</h2><p>In SF, back home, or somewhere on the internet.<br />I’d be glad to hear what you’re working on.</p></div><div class="contact-options"><a class="contact-link" href={profile.linkedin} target="_blank" rel="noreferrer">Say hello on LinkedIn <Arrow diagonal /></a><a class="contact-link" href={profile.x} target="_blank" rel="noreferrer">Say hello on X <Arrow diagonal /></a></div></div>
+  <div class="footer-bottom"><span>© {new Date().getFullYear()} Saheed Akinbile</span><div class="footer-links"><a href="/writing/">Writing</a><a href={profile.x} target="_blank" rel="noreferrer" aria-label="Saheed on X">X <Arrow diagonal /></a><a href={profile.github} target="_blank" rel="noreferrer">GitHub <Arrow diagonal /></a><a href="/rss.xml">RSS</a><a href="#top">Back to top ↑</a></div></div>
+</footer>

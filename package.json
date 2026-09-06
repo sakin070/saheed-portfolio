@@ -1,42 +1,29 @@
 {
-  "name": "saheed-portfolio",
+  "name": "saheed-personal-website",
+  "version": "1.0.0",
   "private": true,
-  "description": "A clean portfolio built with gatsby.js",
-  "version": "0.1.0",
-  "license": "MIT",
+  "type": "module",
+  "description": "Saheed Akinbile — founder, engineer, and curious human.",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "dev": "astro dev --host 127.0.0.1",
+    "start": "npm run dev",
+    "build": "astro build",
+    "preview": "astro preview --host 127.0.0.1",
+    "check": "astro check",
+    "test": "playwright test"
   },
   "dependencies": {
-    "boostrap": "^2.0.0",
-    "gatsby": "^2.3.24",
-    "gatsby-plugin-favicon": "^3.1.6",
-    "gatsby-plugin-google-analytics": "^2.0.18",
-    "gatsby-plugin-manifest": "^2.0.26",
-    "gatsby-plugin-react-helmet": "^3.0.11",
-    "gatsby-plugin-sharp": "^2.0.32",
-    "gatsby-source-filesystem": "^2.0.28",
-    "gatsby-transformer-sharp": "^2.1.17",
-    "react": "^16.8.6",
-    "react-bootstrap": "^1.0.0-beta.6",
-    "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.0"
+    "@fontsource-variable/bricolage-grotesque": "5.3.0",
+    "@fontsource-variable/dm-sans": "5.3.0",
+    "astro": "7.3.1"
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1",
-    "prettier": "^1.16.4"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sakin070/saheed-portfolio/"
-  },
-  "bugs": {
-    "url": "https://github.com/sakin070/saheed-portfolio/"
+    "@astrojs/check": "^0.9.9",
+    "@axe-core/playwright": "^4.11.1",
+    "@playwright/test": "1.63.0",
+    "typescript": "^5.9.3"
   }
 }
