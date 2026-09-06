@@ -66,7 +66,7 @@ test('readers can open the notebook, read a post, and subscribe', async ({ page,
   await page.goto('/writing/');
   await page.getByRole('link', { name: /What I’m building toward/ }).click();
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('What I’m building toward');
-  await expect(page.getByRole('heading', { name: 'The longer-term ambition' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'One of the things that drives me' })).toBeVisible();
   await page.getByRole('link', { name: '← Back to the notebook' }).click();
   await expect(page).toHaveURL(/\/writing\/$/);
   const rss = await request.get('/rss.xml');

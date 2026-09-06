@@ -14,13 +14,13 @@ I grew up in Lagos and moved to Canada at 18. I studied software engineering at 
 
 On paper, those might seem like separate interests. For me, there is a thread running through them.
 
-## The longer-term ambition
+## One of the things that drives me
 
-I want to build businesses that make Nigeria more independent.
+Making Nigeria a better place to live is one of the things that drives me.
 
-That ambition leaves room for more than software. There is value in building the tools businesses use, and there is value in growing what people need. I’m interested in both.
+It’s part of what draws me to building businesses in technology and agriculture. There is value in building the tools businesses use, and there is value in growing what people need. I’m interested in both.
 
-I don’t see that as a finished thesis or a claim that I have it all figured out. It is a direction. It gives me a way to think about the businesses I want to build and the capabilities I want to develop over time.
+That connection to home is personal. It sits alongside my curiosity about technology and the satisfaction of making something useful.
 
 ## Keeping the curiosity
 
@@ -30,4 +30,4 @@ I want this site to have room for that range, too.
 
 This notebook is where I’ll share thoughts, things I’m learning, and ideas I want to put into the world. Some will come from building Minicor. Some will come from the other parts of my life. They won’t all arrive fully formed.
 
-For now, this is the starting point: build useful things, keep learning, and keep the longer-term ambition in view.
+For now, this is the starting point: build useful things, keep learning, and stay connected to what drives me.

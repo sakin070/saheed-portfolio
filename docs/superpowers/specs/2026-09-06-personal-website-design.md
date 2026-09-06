@@ -11,7 +11,7 @@ The homepage flows through an introduction, current work, other businesses, back
 - Minicor: co-founder & CTO, YC Spring 2026; desktop and browser workflows exposed as APIs. The seven applications and three interviews come from Saheed’s public YC acceptance post.
 - Other businesses: an 18-hectare oil palm plantation, a layer chicken farm, and Lucky Star lottery. Ownership/launch claims are user supplied; Lucky Star is also corroborated by the Guardian report.
 - Personal story: Lagos, moving to Canada at 18, software engineering at the University of Ottawa, now SF. Make substantial hardware work at Ford explicit in the introduction and biography. This is user-supplied experience; do not invent projects, technologies, role titles, or dates. Morgan Stanley, Kinaxis, and Software for Love provide additional background.
-- Long-term ambition: businesses that make Nigeria more independent.
+- Personal motivation: making Nigeria a better place to live is one of the things that drives him today. Frame this as a current passion that informs his work, not a deferred ambition or a claim about national independence.
 - Personal interests remain available as background for writing, but the user asked to remove the homepage interests strip.
 - Mentoring: retain only a brief mention in the biography. The user rejected the dedicated mentoring panel; remove its section, navigation item, and service-style invitation.
 - The tone reflects his public writing about curiosity, conversations, and learning. New first-person copy is review copy, not a claim to verbatim quotations.
@@ -41,6 +41,6 @@ Run Astro checks, a Node 24 production build, and Chrome browser tests. Verify h
 - https://www.linkedin.com/posts/saheed-akinbile_thank-you-so-much-for-having-me-activity-7300168708314877952-2M2g — Building for Scale guest talk
 - https://guardian.ng/news/firm-rewards-customers-with-n1m-prize-gifts/ — Lucky Star and Saheed’s role
 - https://www.softwareforlove.com/ — nonprofit website linked from biography
-- Direct user statements — farms, long-term ambition, interests, love of mentoring, hardware work at Ford, audience and tone
+- Direct user statements — farms, personal motivations, interests, love of mentoring, hardware work at Ford, audience and tone
 
 The site uses no personal photographs or copied reference-site assets.
