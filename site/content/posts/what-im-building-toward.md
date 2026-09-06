@@ -1,12 +1,14 @@
 ---
 title: "What I’m building toward"
-description: "A love of things that move, the pull toward software, and the businesses I build today."
+description: "Why I love building Minicor, how we approach AI and execution, and my love of things that move."
 date: 2026-09-06
 category: "Perspective"
 draft: false
 ---
 
-I’m based in San Francisco, building Minicor. We help AI companies connect to the legacy desktop software their customers depend on. It is the kind of engineering problem I like: concrete, complicated, and useful when you get it right.
+I love AI, and I love building Minicor. We’re making computer use deterministic: using AI for reasoning and keeping execution under human control.
+
+We turn desktop and browser workflows into APIs. The goal is to run them through explicit, predictable steps rather than leave consequential runtime decisions to an AI agent. That matters especially in medicine, insurance, and finance. It’s the work I’m excited to do every day.
 
 But a company bio only tells part of the story.
 

@@ -92,9 +92,7 @@
   .light-link:hover { color: #d0dfd4; }
   .founder-note { position: relative; padding: 35px 35px 31px; background: #f7f6f6; overflow: hidden; }
   .note-label { font-size: 9px; color: #73676c; letter-spacing: .08em; font-weight: 600; }
-  .application-count { position: absolute; right: 23px; top: 68px; font-family: var(--heading); font-size: 120px; line-height: 1; font-weight: 600; color: #d8e1d9; letter-spacing: -.08em; transform: rotate(8deg); }
-  .application-count > span { font-size: 58px; vertical-align: top; margin-left: -12px; }
-  .founder-note h4 { position: relative; font-size: 27px; line-height: 1.25; margin-top: 52px; }
+  .founder-note h4 { font-size: 27px; line-height: 1.25; margin-top: 30px; }
   .founder-note > p { font-size: 13px; line-height: 1.85; color: #6b6367; max-width: 290px; margin-top: 22px; }
   .founder-note .quiet-link { margin-top: 16px; font-size: 12px; color: var(--accent); }
   .other-work-heading { display: flex; align-items: baseline; gap: 20px; margin-top: 40px; margin-bottom: 20px; }
@@ -196,8 +194,6 @@
     .featured-intro { font-size: 20px; }
     .founder-note { padding: 32px 27px; }
     .founder-note h4 { font-size: 25px; }
-    .application-count { right: 15px; font-size: 100px; }
-    .application-count > span { font-size: 40px; }
     .venture-card { padding: 22px; }
     .venture-card h3 { font-size: 20px; }
     .about-grid { gap: 50px; }
@@ -223,9 +219,8 @@
     .featured-description { font-size: 12px; }
     .desktop-break { display: none; }
     .founder-note { padding: 28px 23px; }
-    .founder-note h4 { font-size: 24px; margin-top: 45px; }
+    .founder-note h4 { font-size: 24px; margin-top: 26px; }
     .founder-note > p { font-size: 12px; }
-    .application-count { top: 60px; color: #dfe6e0; }
     .venture-grid { gap: 12px; }
     .venture-card { padding: 18px; }
     .venture-top { flex-wrap: wrap; gap: 12px; }
@@ -272,8 +267,6 @@
     .light-link { margin-top: 19px; }
     .founder-note { padding: 25px; }
     .founder-note h4 { margin-top: 22px; font-size: 27px; }
-    .application-count { font-size: 112px; top: 43px; right: 28px; }
-    .application-count > span { font-size: 51px; }
     .founder-note > p { max-width: 320px; font-size: 12px; margin-top: 19px; }
     .founder-note .quiet-link { margin-top: 10px; }
     .other-work-heading { display: block; margin-top: 33px; }
