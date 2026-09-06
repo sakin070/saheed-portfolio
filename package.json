@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Saheed Akinbile \u2014 founder, engineer, and curious human.",
+  "description": "Saheed Akinbile — founder, engineer, and curious human.",
   "engines": {
     "node": ">=22.12.0"
   },
@@ -16,8 +16,8 @@
     "test": "playwright test"
   },
   "dependencies": {
-    "@fontsource-variable/manrope": "5.3.0",
-    "@fontsource/instrument-serif": "5.3.0",
+    "@fontsource-variable/bricolage-grotesque": "5.3.0",
+    "@fontsource-variable/dm-sans": "5.3.0",
     "astro": "7.3.1"
   },
   "devDependencies": {

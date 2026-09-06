@@ -6,6 +6,6 @@ import { publishedPosts } from '../../lib/posts';
 const posts = await publishedPosts();
 ---
 <Layout title="Writing — Saheed Akinbile" description="Notes on building companies, technology, agriculture, and the things I’m figuring out along the way.">
-  <header class="container blog-header"><p class="eyebrow">THE NOTEBOOK / SAHEED AKINBILE</p><h1>Thinking<br /><em>out loud.</em></h1><p>Notes from building a company in San Francisco, keeping a connection to home, and following my curiosity. A place for ideas to take shape.</p></header>
+  <header class="container blog-header"><p class="eyebrow">A SMALL CORNER OF THE INTERNET</p><h1>Notes & thoughts.</h1><p>Things I’m learning, ideas I’m working through, and the occasional thing I just want to share.</p></header>
   <section class="container blog-body" aria-label="Blog posts"><div class="blog-toolbar"><span>{posts.length} {posts.length === 1 ? 'NOTE' : 'NOTES'} & COUNTING</span><a href="/rss.xml">Follow via RSS <Arrow diagonal /></a></div><PostList posts={posts} /></section>
 </Layout>

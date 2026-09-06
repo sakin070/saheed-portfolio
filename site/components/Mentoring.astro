@@ -1,0 +1,8 @@
+---
+import Arrow from './Arrow.astro';
+import { profile } from '../data/profile';
+---
+<section id="mentoring" class="mentoring-section container" aria-labelledby="mentoring-title">
+  <div class="mentoring-copy"><p class="eyebrow">MENTORING & PAYING IT FORWARD</p><h2 id="mentoring-title">I’m in your corner.</h2><p>I love mentoring people. If you’re finding your feet in engineering, starting a company, or thinking through an idea, I’m happy to share what I’ve learned.</p><p>You don’t need a polished pitch. Tell me what you’re working on and where you’re stuck.</p><a class="button button-blue" href={profile.linkedin} target="_blank" rel="noreferrer">Let’s connect <Arrow diagonal /></a></div>
+  <div class="conversation-card"><div class="conversation-people" aria-hidden="true"><img src="/images/saheed.jpg" width="56" height="56" alt="" loading="lazy" /><span class="conversation-line"></span><span class="you-avatar">You</span></div><h3>A conversation<br />can be a good start.</h3><ul><li>Starting out in engineering</li><li>Building your first product</li><li>Finding your way as a founder</li></ul><a href={profile.technicalTalk} class="past-talk" target="_blank" rel="noreferrer"><span>From the community<br /><strong>Building for Scale · Guest talk</strong></span><Arrow diagonal /></a></div>
+</section>

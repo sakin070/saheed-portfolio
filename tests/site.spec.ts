@@ -4,7 +4,7 @@ import AxeBuilder from '@axe-core/playwright';
 test('a visitor can navigate from the introduction to the work and contact', async ({ page }) => {
   await page.goto('/');
   await expect(page).toHaveTitle(/Saheed Akinbile/);
-  await page.getByRole('link', { name: 'Explore my work' }).click();
+  await page.getByRole('link', { name: 'What I’m building' }).click();
   await expect(page).toHaveURL(/#work$/);
   await expect(page.getByRole('heading', { name: 'Minicor', exact: true })).toBeVisible();
   await expect(page.getByRole('link', { name: 'Explore Minicor' })).toHaveAttribute('href', 'https://minicor.com/');
@@ -27,14 +27,18 @@ test('mobile menu supports keyboard dismissal and section navigation', async ({ 
   await expect(menu).toHaveAttribute('aria-expanded', 'false');
 });
 
-test('notes expand without requiring JavaScript', async ({ browser }) => {
+test('mentorship and writing remain reachable without JavaScript', async ({ browser }) => {
   const context = await browser.newContext({ javaScriptEnabled: false });
   const page = await context.newPage();
+  await page.setViewportSize({ width: 360, height: 800 });
   await page.goto('/');
-  const note = page.locator('details').filter({ hasText: 'Production is where the product gets built.' });
-  await note.locator('summary').click();
-  await expect(note).toHaveAttribute('open', '');
-  await expect(note.locator('.note-body')).toBeVisible();
+  const nav = page.getByRole('navigation', { name: 'Main navigation' });
+  await expect(nav.getByRole('link', { name: 'Writing' })).toHaveCount(0);
+  await nav.getByRole('link', { name: 'Mentoring' }).click();
+  await expect(page).toHaveURL(/#mentoring$/);
+  await expect(page.getByRole('link', { name: 'Let’s connect' })).toHaveAttribute('href', 'https://www.linkedin.com/in/saheed-akinbile/');
+  await page.getByRole('contentinfo').getByRole('link', { name: 'Writing', exact: true }).click();
+  await expect(page).toHaveURL(/\/writing\/$/);
   await context.close();
 });
 
@@ -46,7 +50,14 @@ for (const width of [360, 768, 1440]) {
     await page.goto('/');
     await page.evaluate(() => document.fonts.ready);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
-    expect(await page.locator('img').evaluateAll(images => images.every(image => (image as HTMLImageElement).complete && (image as HTMLImageElement).naturalWidth > 0))).toBe(true);
+    for (const image of await page.locator('img').all()) {
+      await image.scrollIntoViewIfNeeded();
+      await expect(image).toBeVisible();
+      await expect.poll(() => image.evaluate(element => {
+        const image = element as HTMLImageElement;
+        return image.complete && image.naturalWidth > 0;
+      })).toBe(true);
+    }
     expect(errors).toEqual([]);
   });
 }

@@ -1,24 +1,22 @@
 ---
 import Arrow from './Arrow.astro';
-import Star from './Star.astro';
+import { profile } from '../data/profile';
 ---
 <section class="hero container" aria-labelledby="hero-title">
   <div class="hero-copy">
-    <p class="eyebrow hero-eyebrow"><span class="status-dot"></span> FOUNDER & ENGINEER · SAN FRANCISCO</p>
-    <h1 id="hero-title">Building a<br />future we<br />can <em>own.</em><span class="sr-only"> — Saheed Akinbile</span></h1>
-    <p class="hero-description">I’m <strong>Saheed Akinbile</strong>, co-founder & CTO of <a href="https://minicor.com/" target="_blank" rel="noreferrer">Minicor (YC)</a>. I build software, businesses, and a few things that grow. Rooted in Nigeria. Based in San Francisco.</p>
-    <a class="text-link" href="#work">Explore my work <Arrow /></a>
+    <p class="location"><span class="status-dot"></span> San Francisco, by way of Lagos & Ottawa</p>
+    <h1 id="hero-title">Hi, I’m<br /><span class="hero-name">Saheed<svg viewBox="0 0 400 18" fill="none" aria-hidden="true"><path d="M5 11C99 0 255 1 394 7M57 16c95-8 214-9 300-6" /></svg></span><span class="hello-dot">.</span><span class="sr-only"> Akinbile</span></h1>
+    <p class="hero-description">A founder, engineer, and a curious person.<br class="desktop-break" /> Currently building <a href={profile.minicor} target="_blank" rel="noreferrer">Minicor</a> as co-founder & CTO.</p>
+    <p class="hero-aside">I’m into ambitious ideas, good conversations, and helping people get started. Glad you’re here.</p>
+    <div class="hero-actions"><a class="button button-blue" href="#work">What I’m building <Arrow /></a><a class="quiet-link" href="#about">A little about me <span aria-hidden="true">↓</span></a></div>
   </div>
   <div class="hero-visual">
-    <div class="portrait-topline"><span class="eyebrow">A LITTLE ABOUT ME</span><Star /></div>
-    <figure class="portrait">
-      <img src="/images/saheed.jpg" width="460" height="460" alt="Saheed Akinbile wearing an olive green shirt" fetchpriority="high" />
-      <figcaption><span class="small-dot"></span> Many interests. One direction.</figcaption>
+    <span class="photo-note">Better with good people around.</span>
+    <svg class="photo-arrow" viewBox="0 0 64 67" fill="none" aria-hidden="true"><path d="M8 4C43 7 20 36 49 50m-18-2 19 5 3-20" /></svg>
+    <figure class="founder-photo">
+      <img src="/images/minicor-founders.jpg" width="800" height="597" alt="Saheed, standing on the left, smiling with his Minicor co-founder Faiz" fetchpriority="high" />
+      <figcaption><span>Me & Faiz, building Minicor.</span><span class="photo-smile" aria-hidden="true">:)</span></figcaption>
     </figure>
-    <div class="portrait-caption"><span>ROOTED IN NIGERIA.</span><span>BUILDING EVERYWHERE.</span></div>
+    <a class="hero-yc" href={profile.yc} target="_blank" rel="noreferrer"><span class="yc-mark">Y</span><span>Part of Y Combinator <b>Spring ’26</b></span><Arrow diagonal /></a>
   </div>
 </section>
-<div class="container journey-strip" aria-label="My journey: Lagos to Ottawa to San Francisco">
-  <span class="eyebrow">THE JOURNEY SO FAR</span>
-  <div class="journey-stops"><span><i class="nigeria-flag" aria-hidden="true"></i>Lagos</span><Arrow /><span>Ottawa</span><Arrow /><span>San Francisco <i class="status-dot" aria-hidden="true"></i></span></div>
-</div>

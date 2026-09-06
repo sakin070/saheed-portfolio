@@ -1,20 +1,10 @@
 ---
-import Star from './Star.astro';
-import { principles } from '../data/profile';
+import Arrow from './Arrow.astro';
 ---
-<section id="about" class="about-section" aria-labelledby="about-title">
-  <div class="container about-grid">
-    <div class="about-heading"><p class="eyebrow section-label"><span>02 /</span> THE PERSON BEHIND THE WORK</p><h2 id="about-title">Lagos roots.<br />A wider <em>lens.</em></h2><Star class="about-star" /></div>
-    <div class="about-copy"><p class="large-copy">I grew up in Lagos, moved to Canada at 18, and found my way from engineering into entrepreneurship.</p><p>At the University of Ottawa, I switched from mechanical engineering to software engineering because I wanted to go deeper into programming. That curiosity has kept taking me into new territory.</p><p>I’ve worked at Morgan Stanley, Ford, and Kinaxis, helped build Software for Love, and co-founded Minicor. Alongside technology, I own an oil palm plantation and a layer poultry farm.</p><p>The thread through all of it is simple: <strong>I want to build businesses that make Nigeria more independent.</strong> That means thinking about what we can create, grow, and build for ourselves.</p></div>
+<section id="about" class="section container about-section" aria-labelledby="about-title">
+  <div class="about-grid">
+    <div class="about-heading"><p class="eyebrow">A LITTLE MORE ME</p><h2 id="about-title">Lagos will always<br />be part of the story.</h2><figure class="about-portrait"><img src="/images/saheed.jpg" width="460" height="460" alt="Portrait of Saheed Akinbile" loading="lazy" /><figcaption>Saheed Akinbile<span>Founder. Engineer. Still learning.</span></figcaption></figure></div>
+    <div class="about-copy"><p class="large-copy">I grew up in Lagos, moved to Canada at 18, and now call San Francisco home.</p><p>I studied software engineering at the University of Ottawa. Since then, I’ve worked at Morgan Stanley, Ford, and Kinaxis, helped build <a href="https://www.softwareforlove.com/" target="_blank" rel="noreferrer">Software for Love</a>, and found my way into building companies.</p><p>My long-term ambition is close to home: <strong>build businesses that make Nigeria more independent.</strong> That’s what connects my interest in technology with the farms and the things I want to build next.</p><p>I like meeting people who are curious about the world and willing to try something. There’s usually a good conversation to be had.</p><div class="journey" aria-label="From Lagos to Ottawa to San Francisco"><span><i class="nigeria-flag" aria-hidden="true"></i>Lagos</span><Arrow /><span>Ottawa</span><Arrow /><span>San Francisco</span></div></div>
   </div>
-  <div class="container background-line"><span class="eyebrow">A FEW STOPS ALONG THE WAY</span><div><span>University of Ottawa</span><span>Morgan Stanley</span><span>Ford</span><span>Kinaxis</span><span>Y Combinator</span></div></div>
-</section>
-<section id="perspective" class="section container perspective-section" aria-labelledby="perspective-title">
-  <div class="section-heading"><div><p class="eyebrow section-label"><span>03 /</span> HOW I THINK</p><h2 id="perspective-title">A few things<br />I come <em>back to.</em></h2></div><p>Working principles, shaped by building.<br />Always open to being refined.</p></div>
-  <div class="principles">{principles.map((principle, i) => <details class="principle"><summary><span class="principle-number">0{i + 1}</span><h3>{principle.title}</h3><span class="expand-icon" aria-hidden="true"></span></summary><div class="note-body"><p>{principle.text}</p></div></details>)}</div>
-  <div class="interests">
-    <div class="interests-intro"><span class="eyebrow">OFF THE CLOCK</span><h3>Still <em>curious.</em></h3></div>
-    <div class="interest"><svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><circle cx="15" cy="15" r="10"/><circle cx="49" cy="15" r="10"/><circle cx="15" cy="49" r="10"/><circle cx="49" cy="49" r="10"/><path d="m15 15 34 34m0-34L15 49"/><rect x="24" y="24" width="16" height="16" rx="4"/></svg><div><h4>Drones & defense tech</h4><p>A fascination with the systems that move through, see, and protect the physical world.</p></div></div>
-    <div class="interest"><svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M16 43V25c0-9 5-16 13-16h7c8 0 13 7 13 15v17l-6 9H23l-7-7Z"/><path d="M16 35c-9-7-13 0-8 8l11 10m4-3v9h20v-9M24 22h15M24 29h15"/></svg><div><h4>MMA & boxing</h4><p>The discipline. The strategy. The craft.<br />A different kind of problem-solving.</p></div></div>
-  </div>
+  <div class="interests"><p>Also happy to talk about</p><div class="interest"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7"/><circle cx="37" cy="11" r="7"/><circle cx="11" cy="37" r="7"/><circle cx="37" cy="37" r="7"/><path d="m11 11 26 26m0-26L11 37"/><rect x="18" y="18" width="12" height="12" rx="3"/></svg><span>Drones & defense tech</span></div><div class="interest"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M13 34V18c0-7 4-12 10-12h5c6 0 10 5 10 12v14l-5 6H18l-5-4Z"/><path d="M13 27c-6-5-10 0-6 6l9 8m2-3v7h15v-7M20 16h10M20 22h10"/></svg><span>MMA & boxing</span></div></div>
 </section>

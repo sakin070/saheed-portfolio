@@ -1,13 +1,8 @@
 ---
 import Arrow from './Arrow.astro';
-import Star from './Star.astro';
 import { profile } from '../data/profile';
 ---
-<footer id="contact" class="contact-section">
-  <div class="container">
-    <p class="eyebrow section-label"><span>05 /</span> GOOD THINGS START WITH A CONVERSATION</p>
-    <div class="contact-heading"><h2>Have something<br />in <em>mind?</em></h2><Star /></div>
-    <div class="contact-bottom"><p>A business to build, an idea to exchange,<br />or a shared curiosity. I’d like to hear it.</p><a class="contact-link" href={profile.linkedin} target="_blank" rel="noreferrer">Say hello on LinkedIn <Arrow diagonal /></a></div>
-    <div class="footer-bottom"><a class="wordmark" href="/" aria-label="Saheed Akinbile — home">saheed<span>.</span></a><span class="copyright">© {new Date().getFullYear()} Saheed Akinbile</span><div class="footer-links"><a href={profile.github} target="_blank" rel="noreferrer">GitHub <Arrow diagonal /></a><a href="/rss.xml">RSS <Arrow diagonal /></a><a href="#top">Back to top ↑</a></div></div>
-  </div>
+<footer id="contact" class="contact-section container">
+  <div class="contact-main"><div><p class="eyebrow">THE INTERNET IS BETTER WITH PEOPLE IN IT.</p><h2>Let’s cross paths.</h2><p>In SF, back home, or somewhere on the internet.<br />I’m always glad to meet someone interesting.</p></div><a class="contact-link" href={profile.linkedin} target="_blank" rel="noreferrer">Say hello on LinkedIn <Arrow diagonal /></a></div>
+  <div class="footer-bottom"><span>© {new Date().getFullYear()} Saheed Akinbile</span><div class="footer-links"><a href="/writing/">Writing</a><a href={profile.github} target="_blank" rel="noreferrer">GitHub <Arrow diagonal /></a><a href="/rss.xml">RSS</a><a href="#top">Back to top ↑</a></div></div>
 </footer>

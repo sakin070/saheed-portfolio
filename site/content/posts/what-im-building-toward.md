@@ -10,7 +10,7 @@ I’m based in San Francisco, building Minicor. We help AI companies connect to 
 
 But a company bio only tells part of the story.
 
-I grew up in Lagos and moved to Canada at 18. I studied software engineering at the University of Ottawa. Along the way, I launched a lottery company called Lucky Start. Today, alongside my work in technology, I own an 18-hectare oil palm plantation and a layer poultry farm.
+I grew up in Lagos and moved to Canada at 18. I studied software engineering at the University of Ottawa. Along the way, I launched a lottery company called Lucky Star. Today, alongside my work in technology, I own an 18-hectare oil palm plantation and a layer poultry farm.
 
 On paper, those might seem like separate interests. For me, there is a thread running through them.
 

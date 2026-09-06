@@ -1,6 +1,6 @@
 # Saheed Akinbile — personal website
 
-A personal site for a founder and engineer in San Francisco, connecting Minicor, entrepreneurship, agriculture, and Nigerian roots. Built with Astro, local fonts, and a small amount of browser JavaScript. Netlify serves static HTML.
+A personal site for a founder and engineer in San Francisco, connecting Minicor, entrepreneurship, agriculture, mentorship, and Nigerian roots. The design is personal and approachable, with real photographs, a blue and white palette, and locally hosted DM Sans and Bricolage Grotesque. Built with Astro, local fonts, and a small amount of browser JavaScript. Netlify serves static HTML.
 
 ## Run locally
 
@@ -45,21 +45,21 @@ draft: true
 Your post goes here. Markdown headings, links, lists, and images work.
 ```
 
-Drafts are excluded from the homepage, writing index, article routes, RSS, and sitemap. A missing `draft` field defaults to `true`. Dates are display metadata, not scheduled publishing. Upload images through the CMS, or add them to `public/images/posts/` and reference `/images/posts/filename.jpg`.
+Drafts are excluded from the writing index, article routes, RSS, and sitemap. Writing is linked in the footer rather than featured on the homepage. A missing `draft` field defaults to `true`. Dates are display metadata, not scheduled publishing. Upload images through the CMS, or add them to `public/images/posts/` and reference `/images/posts/filename.jpg`.
 
 The included **What I’m building toward** essay is new copy drafted from Saheed’s supplied background for review. It is intentionally visible in the unpublished preview (`draft: false`); review or revise it before approving production publication. Set `draft: true` to hide it.
 
 ## Content and design
 
-- `site/data/profile.ts`: verified social links and working principles.
+- `site/data/profile.ts`: verified social links and links to public founder/community posts.
 - `site/components/`: homepage sections, navigation, and footer.
 - `site/content/posts/`: blog posts.
 - `site/styles/global.css`: responsive layout and visual system.
 - `site/layouts/Layout.astro`: page metadata and structured data.
-- `public/images/`: real portrait, generated social card, and blog media.
+- `public/images/`: real portrait and co-founder photo, generated social card, and blog media.
 - `scripts/create-social.mjs`: regenerate the social card using Playwright and local fonts.
 
-The portrait comes from Saheed’s public GitHub profile. Biographical copy uses his current site, Minicor’s YC profile, and details he supplied directly. The opening essay and working principles are new draft copy, not previously published articles. There are no invented testimonials, customer logos, revenue figures, contact emails, or personal hobbies. Rasha Hantash’s site informed the emphasis on substance and clarity; its prose and assets are not copied.
+The portrait comes from Saheed’s public GitHub profile. The candid co-founder photo comes from Faiz’s public Minicor launch post. Biographical copy uses Saheed’s current site, Minicor’s YC profile, his public posts about networking and getting into YC, a technical guest talk, and details he supplied directly. Source links and photo provenance are recorded in the design spec. The opening essay and other first-person copy are new review copy. There are no invented testimonials, mentoring counts, contact emails, or personal hobbies.
 
 The legacy Gatsby source in `src/`, `static/`, and `gatsby-config.js` is retained for reference. Astro reads only `site/` and `public/`. Old résumés, transcripts, and bundled Font Awesome files are not copied into the new deployment.
 

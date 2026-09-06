@@ -1,44 +1,38 @@
 ---
 import Arrow from './Arrow.astro';
-import Star from './Star.astro';
 import { profile } from '../data/profile';
 ---
 <section id="work" class="section container" aria-labelledby="work-title">
-  <div class="section-heading">
-    <div><p class="eyebrow section-label"><span>01 /</span> WHAT I’M BUILDING</p><h2 id="work-title">Different fields.<br />One <em>direction.</em></h2></div>
-    <p>From the software businesses run on to the food we grow. I’m interested in making things that matter.</p>
-  </div>
+  <div class="section-heading"><div><p class="eyebrow">THE THINGS I BUILD</p><h2 id="work-title">Here’s what I’m up to.</h2></div><p>Mostly software.<br />Sometimes a very different kind of seed.</p></div>
   <article class="featured-work">
     <div class="featured-copy">
-      <div class="featured-top"><span class="eyebrow"><span class="status-dot"></span> BUILDING NOW</span><a class="yc-badge" href={profile.yc} target="_blank" rel="noreferrer"><b>Y</b> Combinator <Arrow diagonal /></a></div>
-      <h3>Minicor</h3>
-      <p class="featured-intro">Connecting tomorrow’s AI<br />to the systems we use today.</p>
-      <p class="featured-description">We turn legacy desktop workflows into APIs, so AI companies can work with the software their customers already depend on.</p>
-      <div class="featured-bottom"><a class="text-link light-link" href={profile.minicor} target="_blank" rel="noreferrer">Explore Minicor <Arrow diagonal /></a><span class="eyebrow">CO-FOUNDER & CTO</span></div>
+      <div class="featured-top"><span class="pill"><span class="status-dot"></span> My main focus</span><span class="work-role">Co-founder & CTO</span></div>
+      <h3>Minicor<span aria-hidden="true">↗</span></h3>
+      <p class="featured-intro">Helping AI work with the software<br class="desktop-break" /> the world already runs on.</p>
+      <p class="featured-description">We turn desktop and browser workflows into APIs, connecting AI to the systems businesses use every day.</p>
+      <a class="text-link light-link" href={profile.minicor} target="_blank" rel="noreferrer">Explore Minicor <Arrow diagonal /></a>
     </div>
-    <div class="system-illustration" aria-hidden="true">
-      <div class="illustration-grid"></div>
-      <span class="diagram-label label-top">INTELLIGENCE → EXECUTION</span>
-      <div class="diagram-input"><span class="tiny-label">INPUT</span><span class="code-mark">{`{ }`}</span><span>AI & APIs</span></div>
-      <div class="diagram-wire wire-one"></div>
-      <div class="diagram-core"><Star /><span>minicor</span></div>
-      <div class="diagram-wire wire-two"></div>
-      <div class="diagram-window"><div class="window-bar"><i></i><i></i><i></i></div><div class="window-body"><span></span><span></span><span></span><b>Legacy systems</b></div></div>
-      <span class="diagram-label label-bottom"><i class="status-dot"></i> MAKING THE CONNECTION.</span>
-    </div>
+    <aside class="founder-note" aria-label="A little of the backstory">
+      <span class="note-label">A LITTLE OF THE BACKSTORY</span>
+      <div class="application-count" aria-hidden="true">7<span>↗</span></div>
+      <h4>Seven applications.<br />Three interviews.<br />Then, YC.</h4>
+      <p>Building a company has been a lesson in keeping at it. I’m grateful for the people who’ve been part of the journey.</p>
+      <a class="quiet-link" href={profile.ycStory} target="_blank" rel="noreferrer">The story so far <Arrow diagonal /></a>
+    </aside>
   </article>
+  <div class="other-work-heading"><h3>Beyond the laptop</h3><p>A few other businesses I’ve put my energy into.</p></div>
   <div class="venture-grid">
-    <article class="venture-card">
-      <div class="venture-art lottery-art" aria-hidden="true"><div class="ticket"><span>LUCKY START</span><div class="ticket-star">✳</div><span class="ticket-bottom">AN EARLIER CHAPTER <span>№ 001</span></span></div></div>
-      <div class="venture-info"><p class="eyebrow">ENTREPRENEURSHIP / PREVIOUSLY</p><h3>Lucky Start</h3><p>A lottery company I launched. An earlier chapter in my journey of turning ideas into businesses.</p></div>
+    <article class="venture-card palm-card">
+      <div class="venture-top"><svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M29 55c-1-10 1-25 6-34M34 23c-9-8-20-6-26 1m26-2C31 10 20 7 14 9m22 12c1-9 8-15 14-13M35 23c10-8 20-5 23 1M36 24c10 0 17 5 19 11M35 21c-7-3-16 4-18 11M15 55h32" /></svg><span>Owner</span></div>
+      <h3>Oil palm plantation</h3><p>Eighteen hectares. A long-term investment in growing and producing something tangible.</p><div class="venture-detail"><strong>18</strong><span>hectares of oil palm</span></div>
     </article>
-    <article class="venture-card">
-      <div class="venture-art palm-art" aria-hidden="true"><span class="land-size">18<span>hectares</span></span><svg viewBox="0 0 300 180" fill="none"><path d="M170 180c-3-40-1-69 9-107M181 79c-34-13-52-7-73 7m72-8c-20-28-44-37-70-33m73 32c1-37-15-57-34-65m36 65c26-30 53-35 78-29m-77 33c28-9 51-5 67 12m-69-18c22-12 29-29 28-48" /><path class="field-line" d="M0 138c68-30 89 40 160 14s107-19 140-1M0 160c68-30 89 40 160 14s107-19 140-1" /></svg></div>
-      <div class="venture-info"><p class="eyebrow">AGRICULTURE / OWNER</p><h3>Oil palm plantation</h3><p>Eighteen hectares of oil palm. Building in agriculture and investing in the capacity to produce.</p></div>
+    <article class="venture-card farm-card">
+      <div class="venture-top"><svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M33 36c0 10-6 16-14 16S5 46 5 36 12 13 19 13s14 13 14 23ZM59 37c0 10-6 16-14 16-6 0-10-3-12-8M34 22c3-6 7-10 11-10 7 0 14 15 14 25" /></svg><span>Owner</span></div>
+      <h3>Layer chicken farm</h3><p>A poultry business focused on egg production. Another side of my interest in building productive businesses.</p><div class="venture-detail"><span class="detail-dot"></span><span>Food & agriculture</span></div>
     </article>
-    <article class="venture-card">
-      <div class="venture-art poultry-art" aria-hidden="true"><div class="egg egg-one"></div><div class="egg egg-two"></div><div class="egg egg-three"></div><span class="eyebrow">GROWING SOMETHING TANGIBLE.</span></div>
-      <div class="venture-info"><p class="eyebrow">FOOD PRODUCTION / OWNER</p><h3>Layer poultry farm</h3><p>A layer chicken farm focused on egg production. Another way of building something useful, from the ground up.</p></div>
+    <article class="venture-card lucky-card">
+      <div class="venture-top"><svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M7 15h50v11a7 7 0 0 0 0 14v10H7V40a7 7 0 0 0 0-14V15Z"/><path d="m30 22 4 7 8 2-6 6 1 8-7-4-7 4 1-8-6-6 8-2 4-7ZM47 16v5m0 23v5" /></svg><span>Previously launched</span></div>
+      <h3>Lucky Star</h3><p>A lottery company I launched. A different industry, and an earlier chapter of my life as an entrepreneur.</p><a class="quiet-link" href="https://guardian.ng/news/firm-rewards-customers-with-n1m-prize-gifts/" target="_blank" rel="noreferrer">A little of its story <Arrow diagonal /></a>
     </article>
   </div>
 </section>

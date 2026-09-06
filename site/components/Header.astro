@@ -1,18 +1,17 @@
 ---
 import Arrow from './Arrow.astro';
 const home = Astro.url.pathname === '/';
-const blog = Astro.url.pathname.startsWith('/writing');
 ---
 <header class="site-header">
   <div class="container header-inner">
-    <a class="wordmark" href="/" aria-label="Saheed Akinbile — home">saheed<span>.</span></a>
+    <a class="wordmark" href="/" aria-label="Saheed Akinbile — home"><span class="monogram" aria-hidden="true">sa.</span>Saheed Akinbile</a>
     <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-navigation" hidden>
       <span></span><span></span>
     </button>
     <nav id="main-navigation" class="main-nav" aria-label="Main navigation">
-      <a href={`${home ? '' : '/'}#work`}>Work</a>
       <a href={`${home ? '' : '/'}#about`}>About</a>
-      <a href="/writing/" aria-current={blog ? 'page' : undefined}>Writing</a>
+      <a href={`${home ? '' : '/'}#work`}>Building</a>
+      <a href={`${home ? '' : '/'}#mentoring`}>Mentoring</a>
       <a class="nav-contact" href={`${home ? '' : '/'}#contact`}><span>Let’s talk</span><Arrow diagonal /></a>
     </nav>
   </div>

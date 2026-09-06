@@ -1,17 +1,17 @@
 import { readFile } from 'node:fs/promises';
 import { chromium } from '@playwright/test';
 
-const manrope = await readFile(new URL('../node_modules/@fontsource-variable/manrope/files/manrope-latin-wght-normal.woff2', import.meta.url), 'base64');
-const serif = await readFile(new URL('../node_modules/@fontsource/instrument-serif/files/instrument-serif-latin-400-italic.woff2', import.meta.url), 'base64');
-const portrait = await readFile(new URL('../public/images/saheed.jpg', import.meta.url), 'base64');
+const sans = await readFile(new URL('../node_modules/@fontsource-variable/dm-sans/files/dm-sans-latin-wght-normal.woff2', import.meta.url), 'base64');
+const heading = await readFile(new URL('../node_modules/@fontsource-variable/bricolage-grotesque/files/bricolage-grotesque-latin-wght-normal.woff2', import.meta.url), 'base64');
+const photo = await readFile(new URL('../public/images/minicor-founders.jpg', import.meta.url), 'base64');
 const browser = await chromium.launch({ channel: process.env.PLAYWRIGHT_CHANNEL || 'chrome' });
 try {
   const page = await browser.newPage({ viewport: { width: 1200, height: 630 }, deviceScaleFactor: 1 });
   await page.setContent(`<!doctype html><html><head><style>
-    @font-face{font-family:Manrope;src:url(data:font/woff2;base64,${manrope})} @font-face{font-family:Instrument;src:url(data:font/woff2;base64,${serif});font-style:italic}
-    *{box-sizing:border-box}body{margin:0;background:#f6f3ed;color:#252923;font-family:Manrope;padding:53px 65px;width:1200px;height:630px;position:relative}
-    header{font-size:14px;letter-spacing:1px;display:flex;justify-content:space-between}header b{font-size:28px;letter-spacing:-2px}header b span{color:#b94121}h1{font-size:97px;line-height:1.03;font-weight:500;letter-spacing:-6px;margin:47px 0 27px}em{font-family:Instrument;color:#b94121;font-weight:400}p{font-size:15px;line-height:1.8}img{position:absolute;right:65px;top:131px;width:330px;height:368px;object-fit:cover;border-radius:3px}footer{position:absolute;left:65px;right:65px;bottom:34px;border-top:1px solid #d9d9cf;padding-top:20px;font-size:11px;letter-spacing:1px;display:flex;justify-content:space-between}
-  </style></head><body><header><b>saheed<span>.</span></b><span>FOUNDER & ENGINEER · SAN FRANCISCO</span></header><h1>Building a<br>future we<br>can <em>own.</em></h1><p>Saheed Akinbile · Co-founder & CTO, Minicor (YC)</p><img src="data:image/jpeg;base64,${portrait}" alt=""><footer><span>ROOTED IN NIGERIA. BUILDING EVERYWHERE.</span><span>saheedakinbile.com</span></footer></body></html>`);
+    @font-face{font-family:DM;src:url(data:font/woff2;base64,${sans})} @font-face{font-family:Bricolage;src:url(data:font/woff2;base64,${heading});font-weight:200 800}
+    *{box-sizing:border-box}body{margin:0;background:#eef4ff;color:#192942;font-family:DM;padding:48px 60px;width:1200px;height:630px;position:relative}
+    header{font-size:16px;display:flex;gap:12px;align-items:center}header b{display:grid;place-items:center;background:#2955cf;color:white;border-radius:12px;width:40px;height:40px;font-family:Bricolage;font-size:25px;letter-spacing:-2px;padding-right:3px}h1{font-family:Bricolage;font-size:108px;line-height:.98;font-weight:650;letter-spacing:-7px;margin:39px 0 28px}h1 span{color:#2955cf}p{font-size:17px;line-height:1.7;margin:0}figure{position:absolute;right:64px;top:133px;width:443px;padding:10px 10px 0;background:white;margin:0;border-radius:10px;transform:rotate(3deg);box-shadow:0 10px 30px #25458016}img{display:block;width:100%;border-radius:5px}figcaption{font-size:12px;padding:15px 8px;color:#43516c}footer{position:absolute;left:60px;right:60px;bottom:36px;border-top:1px solid #d0dcf2;padding-top:21px;font-size:12px;display:flex;justify-content:space-between;color:#435677}
+  </style></head><body><header><b>sa.</b>Saheed Akinbile</header><h1>Hi, I’m<br><span>Saheed.</span></h1><p>Founder, engineer, and a curious person.<br>Co-founder & CTO, Minicor (YC Spring 2026)</p><figure><img src="data:image/jpeg;base64,${photo}" alt=""><figcaption>Me & Faiz, building Minicor.</figcaption></figure><footer><span>San Francisco, by way of Lagos & Ottawa</span><span>saheedakinbile.com</span></footer></body></html>`);
   await page.evaluate(() => document.fonts.ready);
   await page.screenshot({ path: new URL('../public/images/social.png', import.meta.url).pathname });
   console.log('Created public/images/social.png (1200 × 630)');
