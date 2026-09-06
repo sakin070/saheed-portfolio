@@ -20,7 +20,7 @@ At Ford, I was part of the camera team and later worked on drive modes. I worked
 
 Those are the kinds of problems that pull me in: code, sensors, and physical systems working together.
 
-Along the way, I built and launched Lucky Star, a lottery product under ESS Nigeria Limited. I also own and fund an 18-hectare oil palm plantation and a layer chicken farm. My brother manages the day-to-day operations and staff.
+Along the way, I built and launched Lucky Star, a lottery product under ESS Nigeria Limited. My personal investments include an 18-hectare oil palm plantation and a poultry farm producing eggs.
 
 I like building things that work in the physical world. Agriculture is one way to do that; Lucky Star was another.
 
