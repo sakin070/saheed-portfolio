@@ -5,15 +5,37 @@ import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { profile } from '../data/profile';
-interface Props { title?: string; description?: string; article?: boolean; noindex?: boolean; }
-const { title = 'Saheed Akinbile — Founder, Engineer & Entrepreneur', description = profile.description, article = false, noindex = false } = Astro.props;
+interface Props {
+  title?: string;
+  description?: string;
+  article?: { title: string; date: Date; category: string };
+  noindex?: boolean;
+}
+const { title = 'Saheed Akinbile — Founder, Engineer & Entrepreneur', description = profile.description, article, noindex = false } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
-const schema = {
-  '@context': 'https://schema.org', '@type': 'Person', name: profile.name,
+const personId = new URL('/#person', Astro.site).href;
+const person = {
+  '@type': 'Person', '@id': personId, name: profile.name,
   url: Astro.site?.href,
   jobTitle: 'Co-founder and CTO', worksFor: { '@type': 'Organization', name: 'Minicor', url: profile.minicor },
   sameAs: [profile.linkedin, profile.github, profile.x],
 };
+const pageSchema = article ? {
+  '@type': 'BlogPosting', '@id': new URL('#article', canonical).href,
+  url: canonical.href, headline: article.title, description,
+  datePublished: article.date.toISOString(), articleSection: article.category,
+  author: { '@id': personId },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonical.href },
+  inLanguage: 'en',
+} : Astro.url.pathname === '/' ? {
+  '@type': 'ProfilePage', '@id': canonical.href, url: canonical.href,
+  name: title, description, mainEntity: { '@id': personId },
+} : undefined;
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [person, ...(pageSchema ? [pageSchema] : [])],
+};
+const googleVerification = import.meta.env.GOOGLE_SITE_VERIFICATION?.trim();
 ---
 <!doctype html>
 <html lang="en">
@@ -27,13 +49,19 @@ const schema = {
     <link rel="alternate" type="application/rss+xml" title="Saheed Akinbile — Writing" href="/rss.xml" />
     <meta property="og:title" content={title} /><meta property="og:description" content={description} />
     <meta property="og:type" content={article ? 'article' : 'website'} /><meta property="og:url" content={canonical} />
+    {article && <>
+      <meta property="article:published_time" content={article.date.toISOString()} />
+      <meta property="article:author" content={person.url} />
+      <meta property="article:section" content={article.category} />
+    </>}
     <meta property="og:image" content={new URL('/images/social.png', Astro.site)} />
     <meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Saheed Akinbile — Founder and engineer. Co-founder & CTO of Minicor, based in San Francisco. AI, things that move, and the software behind them." />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:creator" content={profile.xHandle} />
+    {!noindex && googleVerification && <meta name="google-site-verification" content={googleVerification} />}
     {noindex && <meta name="robots" content="noindex" />}
-    <script is:inline type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g, '\\u003c')} />
+    {!noindex && <script is:inline type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g, '\\u003c')} />}
   </head>
   <body id="top"><a class="skip-link" href="#main">Skip to content</a><Header /><main id="main"><slot /></main><Footer /></body>
 </html>
