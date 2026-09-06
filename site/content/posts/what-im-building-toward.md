@@ -20,7 +20,7 @@ At Ford, I was part of the camera team and later worked on drive modes. I helped
 
 Those are the kinds of problems that pull me in: code, sensors, and physical systems working together.
 
-Along the way, I launched a lottery company called Lucky Star. Today, alongside my work in technology, I own an 18-hectare oil palm plantation and a layer poultry farm.
+Along the way, I launched Lucky Star, a lottery product under ESS Nigeria Limited. Today, alongside my work in technology, I own an 18-hectare oil palm plantation and a layer poultry farm.
 
 On paper, those might seem like separate interests. For me, there is a thread running through them.
 
