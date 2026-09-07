@@ -7,5 +7,4 @@ export const profile = {
   xHandle: '@sahee_d',
   minicor: 'https://minicor.com/',
   yc: 'https://www.ycombinator.com/companies/minicor',
-  ycStory: 'https://www.linkedin.com/posts/saheed-akinbile_some-news-im-deeply-grateful-to-share-activity-7435814713696862208--6mj',
 };

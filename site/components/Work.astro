@@ -3,21 +3,18 @@ import Arrow from './Arrow.astro';
 import { profile } from '../data/profile';
 ---
 <section id="work" class="section container" aria-labelledby="work-title">
-  <div class="section-heading"><div><p class="eyebrow">THE THINGS I BUILD</p><h2 id="work-title">Here’s what I’m up to.</h2></div><p>Building Minicor today.</p></div>
+  <div class="section-heading"><h2 id="work-title">What I’m building</h2></div>
   <article class="featured-work">
-    <div class="featured-copy">
-      <div class="featured-top"><span class="pill"><span class="status-dot"></span> Current work</span><span class="work-role">Co-founder & CTO</span></div>
+    <header class="featured-identity">
       <h3>Minicor</h3>
-      <p class="featured-intro">Automating what we couldn’t before.</p>
-      <p class="featured-description">At Minicor, we’re building deterministic computer use to automate desktop and browser tasks that previously couldn’t be automated. AI handles the reasoning; a predictable runtime executes the steps under human control. We expose those workflows as APIs.</p>
+      <p class="work-role">Co-founder & CTO</p>
+    </header>
+    <div class="featured-copy">
+      <p class="featured-intro">Turning desktop and browser workflows into APIs.</p>
+      <p class="featured-description">We use AI to build automation from examples, including workflows in software without APIs. Deterministic code executes the steps. People decide what goes live and where approval is required.</p>
+      <p class="featured-personal">I want people working in medicine, insurance, and finance to spend less of their day on repetitive computer tasks.</p>
       <a class="text-link light-link" href={profile.minicor} target="_blank" rel="noreferrer">Explore Minicor <Arrow diagonal /></a>
     </div>
-    <aside class="founder-note" aria-label="Why I’m building Minicor">
-      <span class="note-label">WHY I’M BUILDING THIS</span>
-      <h4>The work I want AI to do.</h4>
-      <p>I’m excited about the work we haven’t been able to automate. In medicine, insurance, and finance, there’s a lot riding on getting it right. I want Minicor to help people automate that work and stay in control.</p>
-      <a class="quiet-link" href={profile.ycStory} target="_blank" rel="noreferrer">Our path to YC <Arrow diagonal /></a>
-    </aside>
   </article>
   <div class="other-work-heading"><h3>Past work & personal investments</h3></div>
   <div class="venture-grid">
