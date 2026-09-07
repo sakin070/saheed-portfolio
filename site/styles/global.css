@@ -79,7 +79,8 @@
   .menu-toggle { display: none; }
   .featured-work { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.5fr); gap: 64px; padding: 48px; background: #272628; color: #fff; border-radius: 18px; border: 1px solid #e4e1e3; }
   .featured-work :focus-visible { outline-color: #fff; }
-  .featured-identity h3 { font-size: 62px; letter-spacing: -.055em; }
+  .featured-identity h3 { display: flex; align-items: center; gap: 12px; font-size: clamp(40px, 3.4vw, 48px); letter-spacing: -.055em; }
+  .minicor-mark { width: 56px; height: 56px; flex: none; filter: brightness(0) invert(1); }
   .work-role { font-size: 12px; color: #d1cdd2; margin-top: 14px; }
   .featured-copy { min-width: 0; }
   .featured-intro { font-size: 26px; line-height: 1.4; max-width: 560px; letter-spacing: -.025em; text-wrap: balance; }
@@ -198,7 +199,6 @@
     .section-heading > p { font-size: 12px; }
     .section-heading h2 { font-size: 37px; }
     .featured-work { grid-template-columns: 1fr; padding: 32px; gap: 28px; }
-    .featured-identity h3 { font-size: 52px; }
     .desktop-break { display: none; }
     .venture-grid { gap: 12px; }
     .venture-card { padding: 18px; }
@@ -238,7 +238,6 @@
     .section-heading > p { margin-top: 17px; font-size: 13px; }
     .section-heading > p > br { display: none; }
     .featured-work { padding: 25px; border-radius: 15px; }
-    .featured-identity h3 { font-size: 50px; }
     .featured-intro { font-size: 22px; }
     .featured-description, .featured-personal { font-size: 13px; }
     .light-link { margin-top: 22px; }
