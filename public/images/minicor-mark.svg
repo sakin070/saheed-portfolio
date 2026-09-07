@@ -1,0 +1,46 @@
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<g id="Frame 1261157584" clip-path="url(#clip0_0_1)">
+
+<g id="MenuBar">
+
+<g id="Frame 1261156306">
+<g id="Frame 21924">
+<g id="Frame 21920">
+<g id="Frame 37976308">
+<g id="Group 21922">
+<g id="Frame 21921">
+<g id="Group 21923">
+<g id="Group 21911">
+<g id="Mask group">
+<mask id="mask0_0_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="6" width="15" height="18">
+<rect id="Rectangle 592" x="0.000709534" y="6.44531" width="14.6195" height="16.7617" fill="#646ECB" style="fill:#646ECB;fill:color(display-p3 0.3922 0.4314 0.7961);fill-opacity:1;"/>
+</mask>
+<g mask="url(#mask0_0_1)">
+<path id="Polygon 1" d="M9.17658 6.65625L18.2532 22.9389H0.099946L9.17658 6.65625Z" fill="#5962BE" style="fill:#5962BE;fill:color(display-p3 0.3472 0.3858 0.7451);fill-opacity:1;"/>
+</g>
+</g>
+<g id="Mask group_2">
+<mask id="mask1_0_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="14" y="6" width="16" height="18">
+<rect id="Rectangle 591" x="14.6174" y="6.44531" width="14.6195" height="16.7617" fill="#646ECB" style="fill:#646ECB;fill:color(display-p3 0.3922 0.4314 0.7961);fill-opacity:1;"/>
+</mask>
+<g mask="url(#mask1_0_1)">
+<path id="Subtract" d="M14.4143 16.7832H25.6282L26.008 17.4512H14.4143V18.127H26.3918L26.7805 18.8105H14.4143V19.4863H27.1653L27.5491 20.1621H14.4143V20.8379H27.9338L28.3176 21.5137H14.4143V22.1895H28.7024L29.1243 22.9316H10.677L14.4143 16.3584V16.7832ZM25.2444 16.1074H14.5579L14.9465 15.4238H24.8557L25.2444 16.1074ZM24.4709 14.748H15.3303L15.7102 14.0801H24.0911L24.4709 14.748ZM23.7073 13.4043H16.094L16.4827 12.7207H23.3186L23.7073 13.4043ZM22.9338 12.0449H16.8674L17.2473 11.377H22.5539L22.9338 12.0449ZM22.1702 10.7012H17.6311L18.0198 10.0176H21.7815L22.1702 10.7012ZM21.3967 9.3418H18.4045L18.7844 8.67383H21.0168L21.3967 9.3418ZM20.633 7.99805H19.1682L19.9006 6.71094L20.633 7.99805Z" fill="#5962BE" style="fill:#5962BE;fill:color(display-p3 0.3472 0.3858 0.7451);fill-opacity:1;"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1440" height="4221" fill="white" style="fill:white;fill-opacity:1;" transform="translate(-49.8335 -16.3333)"/>
+</clipPath>
+</defs>
+</svg>
